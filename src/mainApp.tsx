@@ -35,7 +35,7 @@ export const MainApp = () => {
     if (areas.length > 0) {
       setSelectedArea(areas[0]);
     }
-  }, [productionList]);
+  }, []);
 
   const filterDataView = (craft: Production) => {
     if (searchItemName === "") {

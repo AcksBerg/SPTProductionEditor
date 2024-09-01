@@ -1,11 +1,8 @@
 import { Panel } from "primereact/panel";
 import { Button } from "primereact/button";
 import { PrimeIcons } from "primereact/api";
-import { RequirementPanel } from "./RequirementPanel";
-import { formatTime } from "../utils/formatTime";
 import itemList from "../data/item.json";
-import { DataView } from "primereact/dataview";
-import { Area, Production, Requirement } from "../types";
+import { Area, Production } from "../types";
 import { useContext, useState } from "react";
 import { DialogContext } from "../context/DialogContext";
 import { ProductionItemContext } from "../context/ProductionItemContext";
@@ -44,24 +41,20 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
           <span className="font-light"> ID: {item._id}</span>
         </div>
         <div>
-          {selectedArea.areaId == -1 && (
-            <>
-              <Button
-                className="panelHeader-button"
-                icon={PrimeIcons.ARROW_UP}
-                tooltip="Move production item up"
-                tooltipOptions={{ position: "left" }}
-                onClick={() => moveProductionItem(item, true)}
-              />
-              <Button
-                className="panelHeader-button"
-                icon={PrimeIcons.ARROW_DOWN}
-                tooltip="Move production item down"
-                tooltipOptions={{ position: "left" }}
-                onClick={() => moveProductionItem(item, false)}
-              />
-            </>
-          )}
+          <Button
+            className="panelHeader-button"
+            icon={PrimeIcons.ARROW_UP}
+            tooltip="Move production item up"
+            tooltipOptions={{ position: "left" }}
+            onClick={() => moveProductionItem(item, true, selectedArea.areaId)}
+          />
+          <Button
+            className="panelHeader-button"
+            icon={PrimeIcons.ARROW_DOWN}
+            tooltip="Move production item down"
+            tooltipOptions={{ position: "left" }}
+            onClick={() => moveProductionItem(item, false, selectedArea.areaId)}
+          />
           <Button
             className="panelHeader-button p-button-warning"
             icon={PrimeIcons.PENCIL}
@@ -100,16 +93,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
         className="col-12"
         header={panelHeader()}
       >
-        <span className="col-12"> Produces: {item.count} </span>
-        <span className="col-2">
-          {" "}
-          Time: {item.productionTime}s ({formatTime(item.productionTime)})
-        </span>
-        <DataView
-          value={item.requirements}
-          header="Requirements"
-          itemTemplate={(requ: Requirement) => <RequirementPanel requ={requ} />}
-        />
+        {/* Weitere Inhalte */}
       </Panel>
     </>
   );
