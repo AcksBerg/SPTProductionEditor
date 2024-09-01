@@ -42,6 +42,8 @@ export const DataViewHeader = ({
           setCurrentItem(undefined);
           setIsDialogVisible(true);
         }}
+        tooltip="Create new production item"
+        tooltipOptions={{ position: "mouse" }}
       />
       <div>
         <span className="pr-3">Global search</span>

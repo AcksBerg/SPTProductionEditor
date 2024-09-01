@@ -11,7 +11,8 @@
     width: 100%;
 }
 
-.edit-button {
+.panelHeader-button {
     width: 1.857rem;
     padding: 0;
+    margin-right: 5px;
 }

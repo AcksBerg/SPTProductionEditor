@@ -5,18 +5,35 @@ import { RequirementPanel } from "./RequirementPanel";
 import { formatTime } from "../utils/formatTime";
 import itemList from "../data/item.json";
 import { DataView } from "primereact/dataview";
-import { Production, Requirement } from "../types";
-import { useContext } from "react";
+import { Area, Production, Requirement } from "../types";
+import { useContext, useState } from "react";
 import { DialogContext } from "../context/DialogContext";
 import { ProductionItemContext } from "../context/ProductionItemContext";
+import { ProductionListContext } from "../context/ProductionListContext";
+import { ConfirmDialog } from "primereact/confirmdialog";
 
 interface ProductionItemProps {
   item: Production;
+  selectedArea: Area;
 }
 
-export const ProductionItem = ({ item }: ProductionItemProps) => {
+export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
+  const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
   const { setIsDialogVisible } = useContext(DialogContext);
   const { setCurrentItem } = useContext(ProductionItemContext);
+  const { removeProductionItem, moveProductionItem } = useContext(
+    ProductionListContext
+  );
+
+  const handleEditClick = () => {
+    setCurrentItem(item);
+    setIsDialogVisible(true);
+  };
+
+  const handleDeleteClick = () => {
+    removeProductionItem(item._id);
+  };
+
   const panelHeader = () => {
     return (
       <div className="flex w-full justify-content-between align-items-center">
@@ -26,20 +43,56 @@ export const ProductionItem = ({ item }: ProductionItemProps) => {
           </span>
           <span className="font-light"> ID: {item._id}</span>
         </div>
-        <Button
-          className="mr-2 edit-button"
-          icon={PrimeIcons.PENCIL}
-          onClick={() => {
-            setCurrentItem(item);
-            setIsDialogVisible(true);
-          }}
-        />
+        <div>
+          {selectedArea.areaId == -1 && (
+            <>
+              <Button
+                className="panelHeader-button"
+                icon={PrimeIcons.ARROW_UP}
+                tooltip="Move production item up"
+                tooltipOptions={{ position: "left" }}
+                onClick={() => moveProductionItem(item, true)}
+              />
+              <Button
+                className="panelHeader-button"
+                icon={PrimeIcons.ARROW_DOWN}
+                tooltip="Move production item down"
+                tooltipOptions={{ position: "left" }}
+                onClick={() => moveProductionItem(item, false)}
+              />
+            </>
+          )}
+          <Button
+            className="panelHeader-button p-button-warning"
+            icon={PrimeIcons.PENCIL}
+            onClick={() => handleEditClick()}
+            tooltip="Edit production item"
+            tooltipOptions={{ position: "left" }}
+          />
+          <Button
+            className="panelHeader-button p-button-danger"
+            icon={PrimeIcons.TRASH}
+            onClick={() => setDeleteDialogVisible(true)}
+            tooltip="Remove production item"
+            tooltipOptions={{ position: "left" }}
+          />
+        </div>
       </div>
     );
   };
 
   return (
     <>
+      <ConfirmDialog
+        group="declarative"
+        visible={deleteDialogVisible}
+        onHide={() => setDeleteDialogVisible(false)}
+        message="Are you sure you want to proceed?"
+        header="Confirmation"
+        icon="pi pi-exclamation-triangle"
+        accept={handleDeleteClick}
+        reject={() => undefined}
+      />
       <Panel
         toggleable
         collapsed
