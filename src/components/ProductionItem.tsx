@@ -1,13 +1,16 @@
 import { Panel } from "primereact/panel";
 import { Button } from "primereact/button";
 import { PrimeIcons } from "primereact/api";
+import { DataView } from "primereact/dataview";
 import itemList from "../data/item.json";
-import { Area, Production } from "../types";
+import { Area, Production, Requirement } from "../types";
 import { useContext, useState } from "react";
 import { DialogContext } from "../context/DialogContext";
 import { ProductionItemContext } from "../context/ProductionItemContext";
 import { ProductionListContext } from "../context/ProductionListContext";
 import { ConfirmDialog } from "primereact/confirmdialog";
+import { formatTime } from "../utils/formatTime";
+import { RequirementPanel } from "./RequirementPanel";
 
 interface ProductionItemProps {
   item: Production;
@@ -93,7 +96,16 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
         className="col-12"
         header={panelHeader()}
       >
-        {/* Weitere Inhalte */}
+        <span className="col-12"> Produces: {item.count} </span>
+        <span className="col-2">
+          {" "}
+          Time: {item.productionTime}s ({formatTime(item.productionTime)})
+        </span>
+        <DataView
+          value={item.requirements}
+          header="Requirements"
+          itemTemplate={(requ: Requirement) => <RequirementPanel requ={requ} />}
+        />
       </Panel>
     </>
   );
