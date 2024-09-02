@@ -21,9 +21,11 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
   const { setIsDialogVisible } = useContext(DialogContext);
   const { setCurrentItem } = useContext(ProductionItemContext);
-  const { removeProductionItem, moveProductionItem } = useContext(
-    ProductionListContext
-  );
+  const {
+    removeProductionItem,
+    moveProductionItem,
+    isProductionListMoveAvailable,
+  } = useContext(ProductionListContext);
 
   const handleEditClick = () => {
     setCurrentItem(item);
@@ -44,20 +46,28 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
           <span className="font-light"> ID: {item._id}</span>
         </div>
         <div>
-          <Button
-            className="panelHeader-button"
-            icon={PrimeIcons.ARROW_UP}
-            tooltip="Move production item up"
-            tooltipOptions={{ position: "left" }}
-            onClick={() => moveProductionItem(item, true, selectedArea.areaId)}
-          />
-          <Button
-            className="panelHeader-button"
-            icon={PrimeIcons.ARROW_DOWN}
-            tooltip="Move production item down"
-            tooltipOptions={{ position: "left" }}
-            onClick={() => moveProductionItem(item, false, selectedArea.areaId)}
-          />
+          {isProductionListMoveAvailable && (
+            <>
+              <Button
+                className="panelHeader-button"
+                icon={PrimeIcons.ARROW_UP}
+                tooltip="Move production item up"
+                tooltipOptions={{ position: "left" }}
+                onClick={() =>
+                  moveProductionItem(item, true, selectedArea.areaId)
+                }
+              />
+              <Button
+                className="panelHeader-button"
+                icon={PrimeIcons.ARROW_DOWN}
+                tooltip="Move production item down"
+                tooltipOptions={{ position: "left" }}
+                onClick={() =>
+                  moveProductionItem(item, false, selectedArea.areaId)
+                }
+              />
+            </>
+          )}
           <Button
             className="panelHeader-button p-button-warning"
             icon={PrimeIcons.PENCIL}

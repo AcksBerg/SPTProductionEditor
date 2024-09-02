@@ -37,7 +37,7 @@ export const DataViewHeader = ({
         />
       </div>
       <Button
-        label="New Craft"
+        label="New production"
         onClick={() => {
           setCurrentItem(undefined);
           setIsDialogVisible(true);

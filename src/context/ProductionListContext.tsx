@@ -13,6 +13,8 @@ interface ProductionListContextType {
     moveUp: boolean,
     areaId: number
   ) => void;
+  isProductionListMoveAvailable: boolean;
+  setIsProductionListMoveAvailable: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 export const ProductionListContext = createContext<
@@ -25,7 +27,7 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
   const [productionList, setProductionList] = useState<Production[]>(
     initialProductionList
   );
-
+  const [isProductionListMoveAvailable, setIsProductionListMoveAvailable] = useState(true);
   const addProductionItem = (item: Production) => {
     setProductionList((prevList) => [...prevList, item]);
   };
@@ -102,8 +104,10 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
       updateProductionItem,
       removeProductionItem,
       moveProductionItem,
+      isProductionListMoveAvailable,
+      setIsProductionListMoveAvailable
     };
-  }, [productionList]);
+  }, [productionList, isProductionListMoveAvailable]);
 
   return (
     <ProductionListContext.Provider value={contextValue}>

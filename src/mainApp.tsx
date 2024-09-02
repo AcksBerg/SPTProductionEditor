@@ -24,9 +24,15 @@ const getAvailableAreas = (
 };
 
 export const MainApp = () => {
-  const { productionList } = useContext(ProductionListContext);
+  const { productionList, setIsProductionListMoveAvailable } = useContext(
+    ProductionListContext
+  );
   const [filteredAreas, setFilteredAreas] = useState<Area[]>([]);
-  const [selectedArea, setSelectedArea] = useState<Area>({ name: "All", areaId: -1, maxLevel: 0 });
+  const [selectedArea, setSelectedArea] = useState<Area>({
+    name: "All",
+    areaId: -1,
+    maxLevel: 0,
+  });
   const [searchItemName, setSearchItemName] = useState<string>("");
 
   useEffect(() => {
@@ -35,17 +41,15 @@ export const MainApp = () => {
     if (areas.length > 0) {
       setSelectedArea(areas[0]);
     }
-  }, []);
+    setIsProductionListMoveAvailable(searchItemName === "");
+  }, [searchItemName]);
 
   const filterDataView = (craft: Production) => {
-    if (searchItemName === "") {
-      return (
-        craft.areaType === selectedArea.areaId || selectedArea.areaId === -1
-      );
-    }
-    return itemList[craft.endProduct as keyof typeof itemList].name
-      .toLowerCase()
-      .includes(searchItemName.toLowerCase());
+    return searchItemName === ""
+      ? craft.areaType === selectedArea.areaId || selectedArea.areaId === -1
+      : itemList[craft.endProduct as keyof typeof itemList].name
+          .toLowerCase()
+          .includes(searchItemName.toLowerCase());
   };
 
   const saveProductionList = () => {
