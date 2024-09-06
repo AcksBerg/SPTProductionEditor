@@ -1,44 +1,4 @@
 {
-    "5422acb9af1c889c16000029": {
-        "name": "Weapon",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "543be5664bdc2dd4348b4569": {
-        "name": "Meds",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "543be5cb4bdc2deb348b4568": {
-        "name": "Ammo container",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "543be5dd4bdc2deb348b4569": {
-        "name": "Money",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "543be5e94bdc2df1348b4568": {
-        "name": "Key",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "543be5f84bdc2dd4348b456a": {
-        "name": "Equipment",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "543be6564bdc2df4348b4568": {
-        "name": "Throwable weapon",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "543be6674bdc2df1348b4569": {
-        "name": "Food and drink",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "5447a9cd4bdc2dbd208b4567": {
         "name": "Colt M4A1 5.56x45 assault rifle",
         "shortname": "M4A1",
@@ -54,70 +14,10 @@
         "shortname": "Pistol",
         "description": "Pistolet"
     },
-    "5447b5e04bdc2d62278b4567": {
-        "name": "SMG",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447b5f14bdc2d61278b4567": {
-        "name": "Assault rifle",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447b5fc4bdc2d87278b4567": {
-        "name": "Assault carbine",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447b6094bdc2dc3278b4567": {
-        "name": "Shotgun",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447b6194bdc2d67278b4567": {
-        "name": "Marksman rifle",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447b6254bdc2dc3278b4568": {
-        "name": "Sniper rifle",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447bed64bdc2d97278b4568": {
-        "name": "Machinegun",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447bedf4bdc2d87278b4568": {
-        "name": "Grenade launcher",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447bee84bdc2dc3278b4569": {
-        "name": "Special weapon",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447e0e74bdc2d3c308b4567": {
-        "name": "Special item",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5447e1d04bdc2dff2f8b4567": {
-        "name": "Knife",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "5448ba0b4bdc2d02308b456c": {
         "name": "Factory emergency exit key",
         "shortname": "Factory",
         "description": "A somewhat fragile factory emergency exit door key."
-    },
-    "5448bc234bdc2d3c308b4569": {
-        "name": "Magazine",
-        "shortname": "Item",
-        "description": "Item"
     },
     "5448bd6b4bdc2dfc2f8b4569": {
         "name": "Makarov PM 9x18PM pistol",
@@ -129,11 +29,6 @@
         "shortname": "RGD-5",
         "description": "RGD-5 (GAU index - 57-G-717) is an antipersonnel fragmentation time-delayed offensive hand grenade. The grenade's UZRGM fuze insures a time delay of 3.2 - 4.2 seconds. Due to the offensive type of the grenade, its fragments are relatively light and have a smaller dispersion radius."
     },
-    "5448bf274bdc2dfc2f8b456a": {
-        "name": "Port. container",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "5448c12b4bdc2d02308b456f": {
         "name": "PM 9x18PM 90-93 8-round magazine",
         "shortname": "PM",
@@ -143,81 +38,6 @@
         "name": "5.56x45 Magpul PMAG 20 GEN M3 STANAG 20-round magazine",
         "shortname": "GEN M3",
         "description": "The PMAG 20 GEN M3 is a 20-round 5.56x45 NATO (.223 Remington) polymer magazine for AR-15/M4 compatible weapons."
-    },
-    "5448e5284bdc2dcb718b4567": {
-        "name": "Chest rig",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448e53e4bdc2d60728b4567": {
-        "name": "Backpack",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448e54d4bdc2dcc718b4568": {
-        "name": "Armor",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448e5724bdc2ddf718b4568": {
-        "name": "Vis. observ. device",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448e8d04bdc2ddf718b4569": {
-        "name": "Food",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448e8d64bdc2dce718b4568": {
-        "name": "Drink",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448eb774bdc2d0a728b4567": {
-        "name": "Barter item",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448ecbe4bdc2d60728b4568": {
-        "name": "Info",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448f39d4bdc2d0a728b4568": {
-        "name": "Medikit",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448f3a14bdc2d27728b4569": {
-        "name": "Drug",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448f3a64bdc2d60728b456a": {
-        "name": "Stimulant",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448f3ac4bdc2dce718b4569": {
-        "name": "Medical item",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448fe124bdc2da5018b4567": {
-        "name": "Weapon mod",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448fe394bdc2d0d028b456c": {
-        "name": "Muzzle device",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5448fe7a4bdc2d6f028b456b": {
-        "name": "Sights",
-        "shortname": "Item",
-        "description": "Item"
     },
     "5448fee04bdc2dbc018b4567": {
         "name": "Bottle of water (0.6L)",
@@ -364,46 +184,6 @@
         "shortname": "Ammo",
         "description": "Ammo"
     },
-    "550aa4154bdc2dd8348b456b": {
-        "name": "Functional mod",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "550aa4af4bdc2dd4348b456e": {
-        "name": "Compensator",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "550aa4bf4bdc2dd6348b456b": {
-        "name": "Flashhider",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "550aa4cd4bdc2dd8348b456c": {
-        "name": "Silencer",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "550aa4dd4bdc2dc9348b4569": {
-        "name": "Comb. muzzle device",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "550ad14d4bdc2dd5348b456c": {
-        "name": "PMS",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "555ef6e44bdc2de9068b457e": {
-        "name": "Barrel",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "557596e64bdc2dc2118b4571": {
-        "name": "Pockets",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "557ff21e4bdc2d89578b4586": {
         "name": "Tactical glasses",
         "shortname": "TGlasses",
@@ -444,16 +224,6 @@
         "shortname": "GEN M3",
         "description": "A 30-round 5.56x45 Magpul PMAG GEN M3 30 polymer magazine with an observation slot for faster capacity checking."
     },
-    "55802f3e4bdc2de7118b4584": {
-        "name": "Gear mod",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55802f4a4bdc2ddb688b4569": {
-        "name": "Essential mod",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "55802f5d4bdc2dac148b458f": {
         "name": "AR-15 Magpul MOE pistol grip (Black)",
         "shortname": "MOE AR15",
@@ -463,106 +233,6 @@
         "name": "TangoDown Stubby BGV-MK46K foregrip (Black)",
         "shortname": "BGV-MK46K",
         "description": "The TangoDown Stubby BGV-MK46K tactical grip is a short grip for use with weapons in close and extra close quarters combat. It ideally fits assault shotguns and also contains a compartment for batteries or SPTA. Black version."
-    },
-    "55818a104bdc2db9688b4569": {
-        "name": "Handguard",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818a304bdc2db5418b457d": {
-        "name": "Receiver",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818a594bdc2db9688b456a": {
-        "name": "Stock",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818a604bdc2db5418b457e": {
-        "name": "Mag shaft",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818a684bdc2ddd698b456d": {
-        "name": "Pistol grip",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818a6f4bdc2db9688b456b": {
-        "name": "Charging handle",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818ac54bdc2d5b648b456e": {
-        "name": "Ironsight",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818acf4bdc2dde698b456b": {
-        "name": "Compact reflex sight",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818ad54bdc2ddc698b4569": {
-        "name": "Reflex sight",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818add4bdc2d5b648b456f": {
-        "name": "Assault scope",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818ae44bdc2dde698b456c": {
-        "name": "Scope",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818aeb4bdc2ddc698b456a": {
-        "name": "Special scope",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818af64bdc2d5b648b4570": {
-        "name": "Foregrip",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818afb4bdc2dde698b456d": {
-        "name": "Bipod",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818b014bdc2ddc698b456b": {
-        "name": "UBGL",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818b084bdc2d5b648b4571": {
-        "name": "Flashlight",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818b0e4bdc2dde698b456e": {
-        "name": "Laser designator",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818b164bdc2ddc698b456c": {
-        "name": "Comb. tact. device",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818b1d4bdc2d5b648b4572": {
-        "name": "Rail covers",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "55818b224bdc2dde698b456f": {
-        "name": "Mount",
-        "shortname": "Item",
-        "description": "Item"
     },
     "559ba5b34bdc2d1f1a8b4582": {
         "name": "SV-98 7.62x54R 10-round magazine",
@@ -709,11 +379,6 @@
         "shortname": "556-MINI",
         "description": "The SureFire SOCOM556-MINI MONSTER 5.56x45 and .223 sound suppressor is a shorter version of the SOCOM556-MONSTER. Can only be installed on compatible SureFire muzzle devices."
     },
-    "55d720f24bdc2d88028b456d": {
-        "name": "Inventory",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "55d7217a4bdc2d86028b456d": {
         "name": "Default Inventory",
         "shortname": "Default Inventory",
@@ -833,11 +498,6 @@
         "name": "FORT Kiver-M bulletproof helmet",
         "shortname": "Kiver-M",
         "description": "The FORT Kiver-M bulletproof helmets are designed for use by officers of special law enforcement agencies of the Russian Federation."
-    },
-    "5645bcb74bdc2ded0b8b4578": {
-        "name": "Headphones",
-        "shortname": "Item",
-        "description": "Item"
     },
     "5645bcc04bdc2d363b8b4572": {
         "name": "Peltor ComTac 2 headset (OD Green)",
@@ -984,40 +644,10 @@
         "shortname": "VOG-25",
         "description": "A 40mm VOG-25 underbarrel grenade launcher fragmentation round with an arming distance of 25-30 meters."
     },
-    "566162e44bdc2d3f298b4573": {
-        "name": "Compound item",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "5661632d4bdc2d903d8b456b": {
-        "name": "Stackable item",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "566168634bdc2d144c8b456c": {
-        "name": "Searchable item",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "566965d44bdc2d814c8b4571": {
-        "name": "Loot container",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "566abbb64bdc2d144c8b457d": {
-        "name": "Stash",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "566abbc34bdc2d92178b4576": {
         "name": "Stash",
         "shortname": "Stash",
         "description": "Somebody's badly camouflaged stash."
-    },
-    "5671435f4bdc2d96058b4569": {
-        "name": "Locking container",
-        "shortname": "Item",
-        "description": "Item"
     },
     "567143bf4bdc2d1a0f8b4567": {
         "name": "Pistol case",
@@ -1063,16 +693,6 @@
         "name": "Broken GPhone smartphone",
         "shortname": "GPhone",
         "description": "GPhone 9s - one of the previous generations of the famous smartphone model. Shattered beyond repair."
-    },
-    "567583764bdc2d98058b456e": {
-        "name": "Stationary cont.",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "567849dd4bdc2d150f8b456e": {
-        "name": "Map",
-        "shortname": "Item",
-        "description": "Item"
     },
     "5696686a4bdc2da3298b456a": {
         "name": "Dollars",
@@ -1273,11 +893,6 @@
         "name": "AR-15 Windham Weaponry Rail Gas Block",
         "shortname": "RGBlock",
         "description": "Installed as replacement to standard AR-15-based weapons gas blocks, it adds a Picatinny rail that allows the installation of your own front sight."
-    },
-    "56ea9461d2720b67698b456f": {
-        "name": "Gas block",
-        "shortname": "Item",
-        "description": "Item"
     },
     "56eabcd4d2720b66698b4574": {
         "name": "AR-15 Daniel Defense MK12 Low Profile Gas Block",
@@ -2099,46 +1714,6 @@
         "shortname": "Wallet",
         "description": "A simple wallet for storing money."
     },
-    "57864a3d24597754843f8721": {
-        "name": "Jewelry",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "57864a66245977548f04a81f": {
-        "name": "Electronics",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "57864ada245977548638de91": {
-        "name": "Building material",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "57864bb7245977548b3b66c2": {
-        "name": "Tool",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "57864c322459775490116fbf": {
-        "name": "Household goods",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "57864c8c245977548867e7f1": {
-        "name": "Medical supplies",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "57864e4c24597754843f8723": {
-        "name": "Lubricant",
-        "shortname": "Item",
-        "description": "Item"
-    },
-    "57864ee62459775490116fc1": {
-        "name": "Battery",
-        "shortname": "Item",
-        "description": "Item"
-    },
     "578f8778245977358849a9b5": {
         "name": "Jacket",
         "shortname": "Jacket",
@@ -2173,11 +1748,6 @@
         "name": "Makarov PM (t) 9x18PM pistol",
         "shortname": "PM (t)",
         "description": "A semi-mythical Makarov pistol with an extended threaded barrel for equipping a sound suppressor. Some claim it was a limited production series manufactured in Bulgaria, whilst others insist on it being East German, or even a handcrafted upgrade. As for how it ended up in the Norvinsk region, no living soul could tell you now."
-    },
-    "5795f317245977243854e041": {
-        "name": "Common container",
-        "shortname": "Item",
-        "description": "Item"
     },
     "5798a2832459774b53341029": {
         "name": "Customs plan map",
@@ -2243,11 +1813,6 @@
         "name": "Hogue OverMolded Rubber Grip (FDE)",
         "shortname": "OMRG FDE",
         "description": "A fiberglass rubber-overmolded anti-slip pistol grip for AR systems, manufactured by Hogue. Flat Dark Earth version."
-    },
-    "57bef4c42459772e8d35a53b": {
-        "name": "Armored equipment",
-        "shortname": "Item",
-        "description": "Item"
     },
     "57c44b372459772d2b39b8ce": {
         "name": "AS VAL 9x39 special assault rifle",
