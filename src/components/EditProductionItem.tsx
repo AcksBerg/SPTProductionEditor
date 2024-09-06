@@ -1,5 +1,6 @@
 import { Dialog } from "primereact/dialog";
 import { DialogContext } from "../context/DialogContext";
+import { DataView } from "primereact/dataview";
 import { useContext, useEffect, useState } from "react";
 import { ProductionItemContext } from "../context/ProductionItemContext";
 import { Production, Requirement } from "../types";
@@ -8,6 +9,10 @@ import areaList from "../data/area.json";
 import itemList from "../data/item.json";
 import { InputText } from "primereact/inputtext";
 import { formatTime } from "../utils/formatTime";
+import { Button } from "primereact/button";
+import { PrimeIcons } from "primereact/api";
+import { EditRequirementPanel } from "./EditRequirementPanel";
+import { ProductionListContext } from "../context/ProductionListContext";
 
 const generateNewId = (length: number = 24): string => {
   let newId = "";
@@ -22,7 +27,7 @@ const generateNewId = (length: number = 24): string => {
 const defaultRequirement: Requirement = {
   areaType: undefined,
   requiredLevel: undefined,
-  templateId: "",
+  templateId: "5755383e24597772cb798966",
   count: 1,
   isFunctional: false,
   isEncoded: false,
@@ -33,7 +38,7 @@ const defaultRequirement: Requirement = {
 const defaultProduction: Production = {
   _id: generateNewId(),
   areaType: 0,
-  requirements: [defaultRequirement],
+  requirements: [],
   productionTime: 60,
   needFuelForAllProductionTime: false,
   locked: false,
@@ -47,10 +52,28 @@ const defaultProduction: Production = {
 
 export const EditProductionItem = () => {
   const { isDialogVisible, setIsDialogVisible } = useContext(DialogContext);
-  const { currentItem } = useContext(ProductionItemContext);
-  const itemDropdownOptions = Object.keys(itemList).map(id => ({
+  const [tempId, setTempId] = useState<string>(generateNewId());
+  const { addProductionItem, updateProductionItem } = useContext(
+    ProductionListContext
+  );
+  const { currentItem, setCurrentItem } = useContext(ProductionItemContext);
+  const handleSave = () => {
+    if (!production?.endProduct || production?.requirements.length < 1) {
+      console.log("End Product and Requirments must be set.");
+      return;
+    }
+    setProduction({ ...production!, _id: tempId + production!._id });
+    if (currentItem) {
+      updateProductionItem(production);
+    } else {
+      addProductionItem(production);
+    }
+    setIsDialogVisible(false);
+    setCurrentItem(undefined);
+  };
+  const itemDropdownOptions = Object.keys(itemList).map((id) => ({
     label: itemList[id].name,
-    value: id
+    value: id,
   }));
   const [production, setProduction] = useState<Production | undefined>(
     undefined
@@ -70,6 +93,16 @@ export const EditProductionItem = () => {
   return (
     <Dialog
       header={createNewItem ? "New Production" : `Edit Production`}
+      footer={
+        <div className="flex align-items-center justify-content-center">
+          <Button severity="success" label="Save" onClick={handleSave} />
+          <Button
+            severity="warning"
+            label="Cancel"
+            onClick={() => setIsDialogVisible(false)}
+          />
+        </div>
+      }
       visible={true}
       onHide={() => setIsDialogVisible(false)}
       className="w-9"
@@ -79,23 +112,30 @@ export const EditProductionItem = () => {
         <InputText
           placeholder="ID PreFix Hex"
           keyfilter="hex"
-          value={production?._id}
+          value={tempId}
           onChange={(e) => {
             if (e.target.value.length > 24) return;
-            setProduction({ ...production!, _id: e.target.value });
+            setTempId(e.target.value);
+            setProduction({
+              ...production!,
+              _id: generateNewId(24 - tempId.length),
+            });
           }}
           className="col-5"
+          disabled={!!currentItem}
         />
         <span className="ml-2">
+          {tempId}
           {production?._id}
-          {generateNewId(24 - production!._id.length)}
         </span>
       </div>
       <div className="flex align-items-center mt-1">
         <span className="col-2">End product:</span>
         <Dropdown
           value={production?.endProduct}
-          onChange={(e) => setProduction({ ...production!, endProduct: e.value })}
+          onChange={(e) =>
+            setProduction({ ...production!, endProduct: e.value })
+          }
           options={itemDropdownOptions}
           optionLabel="label"
           optionValue="value"
@@ -103,9 +143,7 @@ export const EditProductionItem = () => {
           filter
           className="col-5 py-1"
         />
-        <span className="ml-2">
-          {production?.endProduct}
-        </span>
+        <span className="ml-2">{production?.endProduct}</span>
       </div>
       <div className="flex align-items-center mt-1">
         <span className="col-2">Area:</span>
@@ -143,10 +181,52 @@ export const EditProductionItem = () => {
           }}
           className="col-5 text-right"
         />
-        <span className="ml-2">
-          {formatTime(production!.productionTime)}
-        </span>
+        <span className="ml-2">{formatTime(production!.productionTime)}</span>
       </div>
+      <DataView
+        value={production!.requirements}
+        header={
+          <div className="flex justify-content-between align-items-center">
+            <span>Requirements</span>
+            <Button
+              icon={PrimeIcons.PLUS}
+              className="panelHeader-button"
+              onClick={() => {
+                setProduction((prevProduction) => ({
+                  ...prevProduction!,
+                  requirements: [
+                    ...prevProduction!.requirements,
+                    defaultRequirement,
+                  ],
+                }));
+              }}
+            />
+          </div>
+        }
+        itemTemplate={(requ: Requirement) => (
+          <EditRequirementPanel
+            requ={requ}
+            onRequirementChange={(updatedRequirement) => {
+              const updatedRequirements = production!.requirements.map((r) =>
+                r === requ ? updatedRequirement : r
+              );
+              setProduction({
+                ...production!,
+                requirements: updatedRequirements,
+              });
+            }}
+            onDelete={() => {
+              const updatedRequirements = production!.requirements.filter(
+                (r) => r !== requ
+              );
+              setProduction({
+                ...production!,
+                requirements: updatedRequirements,
+              });
+            }}
+          />
+        )}
+      />
     </Dialog>
   );
 };

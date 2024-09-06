@@ -16,3 +16,11 @@
     padding: 0;
     margin-right: 5px;
 }
+
+.p-dialog-footer {
+    padding: 10px;
+}
+
+.requ-input {
+    padding: 0;
+}

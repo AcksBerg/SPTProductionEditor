@@ -10,24 +10,10 @@ import { Area, Production } from "./types";
 import { ProductionListContext } from "./context/ProductionListContext";
 import { EditProductionItem } from "./components/EditProductionItem";
 
-const getAvailableAreas = (
-  productionList: Production[],
-  areaList: Area[]
-): Area[] => {
-  const usedAreaTypes = Array.from(
-    new Set(productionList.map((prod) => prod.areaType))
-  );
-  return [
-    { name: "All", areaId: -1, maxLevel: 0 },
-    ...areaList.filter((area) => usedAreaTypes.includes(area.areaId)),
-  ];
-};
-
 export const MainApp = () => {
-  const { productionList, setIsProductionListMoveAvailable } = useContext(
+  const { productionList, setIsProductionListMoveAvailable, availableAreas } = useContext(
     ProductionListContext
   );
-  const [filteredAreas, setFilteredAreas] = useState<Area[]>([]);
   const [selectedArea, setSelectedArea] = useState<Area>({
     name: "All",
     areaId: -1,
@@ -37,7 +23,6 @@ export const MainApp = () => {
 
   useEffect(() => {
     const areas = getAvailableAreas(productionList, areaList);
-    setFilteredAreas(areas);
     if (areas.length > 0) {
       setSelectedArea(areas[0]);
     }
@@ -79,7 +64,7 @@ export const MainApp = () => {
             setSelectedArea={setSelectedArea}
             searchItemName={searchItemName}
             setSearchItemName={setSearchItemName}
-            availableAreas={filteredAreas}
+            availableAreas={availableAreas}
           />
         }
         paginator
