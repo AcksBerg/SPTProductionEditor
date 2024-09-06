@@ -24,14 +24,14 @@ for id_part, attributes in temp_items.items():
     # Remove Parentitems
     # Remove more parentitems
     # Remove stuff from blacklist (first two methods failed)
-    # Remove clothing
+    # Remove clothing and pictures
     if not (
         attributes.get("shortname") == "Item" or
         attributes.get("description") == "Item"
     ) and (
         attributes.get("shortname") != attributes.get("description")
     ) and (id_part not in id_blacklist) and not (
-        attributes.get("name").startswith("USEC ") or attributes.get("name").startswith("BEAR ")
+        attributes.get("name").startswith("USEC ") or attributes.get("name").startswith("BEAR ") or attributes.get("name").startswith("Picture ")
     ):
         items[id_part] = attributes
 # Create the json output

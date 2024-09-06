@@ -15384,66 +15384,6 @@
         "shortname": "Rusted",
         "description": "A rusted and bloody key. Has \"The holder of this key will wander for eternity\" inscribed on it."
     },
-    "64e73909cd54ef0580746af3": {
-        "name": "Picture 1",
-        "shortname": "Picture 1",
-        "description": ""
-    },
-    "64e74a186393886f74114a96": {
-        "name": "Picture 2",
-        "shortname": "Picture 2",
-        "description": ""
-    },
-    "64e74a1faac4cd0a7264ecd9": {
-        "name": "Picture 3",
-        "shortname": "Picture 3",
-        "description": ""
-    },
-    "64e74a274d49d23b2c39d317": {
-        "name": "Picture 4",
-        "shortname": "Picture 4",
-        "description": ""
-    },
-    "64e74a2fc2b4f829615ec332": {
-        "name": "Picture 5",
-        "shortname": "Picture 5",
-        "description": ""
-    },
-    "64e74a35aac4cd0a7264ecdb": {
-        "name": "Picture 6",
-        "shortname": "Picture 6",
-        "description": ""
-    },
-    "64e74a3d4d49d23b2c39d319": {
-        "name": "Picture 7",
-        "shortname": "Picture 7",
-        "description": ""
-    },
-    "64e74a44c2b4f829615ec334": {
-        "name": "Picture 8",
-        "shortname": "Picture 8",
-        "description": ""
-    },
-    "64e74a4baac4cd0a7264ecdd": {
-        "name": "Picture 9",
-        "shortname": "Picture 9",
-        "description": ""
-    },
-    "64e74a534d49d23b2c39d31b": {
-        "name": "Picture 10",
-        "shortname": "Picture 10",
-        "description": ""
-    },
-    "64e74a5ac2b4f829615ec336": {
-        "name": "Picture 11",
-        "shortname": "Picture 11",
-        "description": ""
-    },
-    "64e74a64aac4cd0a7264ecdf": {
-        "name": "Picture 12",
-        "shortname": "Picture 12",
-        "description": ""
-    },
     "64f07f7726cfa02c506f8ac0": {
         "name": "Journal",
         "shortname": "Journal",
