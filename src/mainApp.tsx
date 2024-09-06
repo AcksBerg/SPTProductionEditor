@@ -9,10 +9,16 @@ import { Area, Production } from "./types";
 import { ProductionListContext } from "./context/ProductionListContext";
 import { EditProductionItem } from "./components/EditProductionItem";
 import { PrimeIcons } from "primereact/api";
+import { ConfirmDialog } from "primereact/confirmdialog";
 
 export const MainApp = () => {
-  const { productionList, setProductionList, setIsProductionListMoveAvailable, availableAreas } =
-    useContext(ProductionListContext);
+  const {
+    productionList,
+    setProductionList,
+    setIsProductionListMoveAvailable,
+    availableAreas,
+  } = useContext(ProductionListContext);
+  const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
   const [selectedArea, setSelectedArea] = useState<Area>({
     name: "All",
     areaId: -1,
@@ -22,7 +28,7 @@ export const MainApp = () => {
 
   useEffect(() => {
     if (availableAreas.length > 0) {
-      setSelectedArea(availableAreas[0]); 
+      setSelectedArea(availableAreas[0]);
     }
     setIsProductionListMoveAvailable(searchItemName === "");
   }, [searchItemName, availableAreas]);
@@ -45,6 +51,16 @@ export const MainApp = () => {
 
   return (
     <>
+      <ConfirmDialog
+        group="declarative"
+        visible={deleteDialogVisible}
+        onHide={() => setDeleteDialogVisible(false)}
+        message="Are you sure you want to delete ALL productions?"
+        header="Confirmation"
+        icon="pi pi-exclamation-triangle"
+        accept={() => setProductionList([])}
+        reject={() => undefined}
+      />
       <Button
         className="p-button-success"
         label="Download"
@@ -56,7 +72,7 @@ export const MainApp = () => {
         className="p-button-danger ml-2"
         label="Clear production list"
         icon={PrimeIcons.TRASH}
-        onClick={() => setProductionList([])}
+        onClick={() => setDeleteDialogVisible(true)}
         tooltip="Remove every production and start fresh."
         tooltipOptions={{ position: "mouse" }}
       />
