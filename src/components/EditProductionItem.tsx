@@ -13,6 +13,7 @@ import { Button } from "primereact/button";
 import { PrimeIcons } from "primereact/api";
 import { EditRequirementPanel } from "./EditRequirementPanel";
 import { ProductionListContext } from "../context/ProductionListContext";
+import { InputNumber } from "primereact/inputnumber";
 
 const generateNewId = (length: number = 24): string => {
   let newId = "";
@@ -25,14 +26,14 @@ const generateNewId = (length: number = 24): string => {
 };
 
 const defaultRequirement: Requirement = {
-  areaType: undefined,
-  requiredLevel: undefined,
+  areaType: 0,
+  requiredLevel: 1,
   templateId: "5755383e24597772cb798966",
   count: 1,
   isFunctional: false,
   isEncoded: false,
   type: "Item",
-  questId: undefined,
+  questId: "5936d90786f7742b1420ba5b",
 };
 
 const defaultProduction: Production = {
@@ -42,7 +43,7 @@ const defaultProduction: Production = {
   productionTime: 60,
   needFuelForAllProductionTime: false,
   locked: false,
-  endProduct: "",
+  endProduct: "5755383e24597772cb798966",
   continuous: false,
   count: 1,
   productionLimitCount: 0,
@@ -52,29 +53,39 @@ const defaultProduction: Production = {
 
 export const EditProductionItem = () => {
   const { isDialogVisible, setIsDialogVisible } = useContext(DialogContext);
-  const [tempId, setTempId] = useState<string>(generateNewId());
   const { addProductionItem, updateProductionItem } = useContext(
     ProductionListContext
   );
   const { currentItem, setCurrentItem } = useContext(ProductionItemContext);
+  const [tempId, setTempId] = useState<string>("");
+  const handleClose = () => {
+    setTempId("");
+    setCurrentItem(undefined);
+    setIsDialogVisible(false);
+  };
   const handleSave = () => {
     if (!production?.endProduct || production?.requirements.length < 1) {
       console.log("End Product and Requirments must be set.");
       return;
     }
-    setProduction({ ...production!, _id: tempId + production!._id });
+    const updatedProduction = {
+      ...production,
+      _id: tempId + production._id,
+      locked: production.requirements.some((r) => r.type === "QuestComplete"),
+    };
     if (currentItem) {
-      updateProductionItem(production);
+      updateProductionItem(updatedProduction);
     } else {
-      addProductionItem(production);
+      addProductionItem(updatedProduction);
     }
-    setIsDialogVisible(false);
-    setCurrentItem(undefined);
+    handleClose();
   };
+
   const itemDropdownOptions = Object.keys(itemList).map((id) => ({
     label: itemList[id].name,
     value: id,
   }));
+
   const [production, setProduction] = useState<Production | undefined>(
     undefined
   );
@@ -92,7 +103,7 @@ export const EditProductionItem = () => {
 
   return (
     <Dialog
-      header={createNewItem ? "New Production" : `Edit Production`}
+      header={createNewItem ? "New Production" : "Edit Production"}
       footer={
         <div className="flex align-items-center justify-content-center">
           <Button severity="success" label="Save" onClick={handleSave} />
@@ -104,13 +115,13 @@ export const EditProductionItem = () => {
         </div>
       }
       visible={true}
-      onHide={() => setIsDialogVisible(false)}
+      onHide={handleClose}
       className="w-9"
     >
       <div className="flex align-items-center mt-1">
         <span className="col-2">ID:</span>
         <InputText
-          placeholder="ID PreFix Hex"
+          placeholder="ID PreFix in Hex"
           keyfilter="hex"
           value={tempId}
           onChange={(e) => {
@@ -125,8 +136,7 @@ export const EditProductionItem = () => {
           disabled={!!currentItem}
         />
         <span className="ml-2">
-          {tempId}
-          {production?._id}
+          {!!tempId ? tempId + production?._id : production?._id}
         </span>
       </div>
       <div className="flex align-items-center mt-1">
@@ -160,26 +170,29 @@ export const EditProductionItem = () => {
       </div>
       <div className="flex align-items-center mt-1">
         <span className="col-2">Produces:</span>
-        <InputText
+        <InputNumber
           placeholder="Produces"
-          keyfilter="int"
           value={production?.count}
           onChange={(e) => {
-            setProduction({ ...production!, count: e.target.value });
+            setProduction({ ...production!, count: e.value });
           }}
-          className="col-5 text-right"
+          min={1}
+          className="col-5 requ-input"
+          showButtons
         />
       </div>
       <div className="flex align-items-center mt-1">
-        <span className="col-2">Time(s):</span>
-        <InputText
+        <span className="col-2">Time:</span>
+        <InputNumber
           placeholder="Time in seconds"
-          keyfilter="int"
           value={production?.productionTime}
           onChange={(e) => {
-            setProduction({ ...production!, productionTime: e.target.value });
+            setProduction({ ...production!, productionTime: e.value });
           }}
-          className="col-5 text-right"
+          mode="decimal"
+          min={1}
+          suffix=" s"
+          className="col-5 requ-input"
         />
         <span className="ml-2">{formatTime(production!.productionTime)}</span>
       </div>

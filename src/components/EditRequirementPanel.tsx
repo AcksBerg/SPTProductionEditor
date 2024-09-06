@@ -1,11 +1,9 @@
 import { Dropdown } from "primereact/dropdown";
-import { InputText } from "primereact/inputtext";
 import { InputNumber } from "primereact/inputnumber";
 import areaList from "../data/area.json";
 import itemList from "../data/item.json";
 import questList from "../data/quest.json";
 import { Requirement } from "../types";
-import { Slider } from "primereact/slider";
 import { Button } from "primereact/button";
 import { PrimeIcons } from "primereact/api";
 
@@ -20,8 +18,18 @@ export const EditRequirementPanel = ({
   onRequirementChange,
   onDelete
 }: EditRequirementPanelProps) => {
-  const handleRequirementChange = (field: keyof Requirement, value: any) => {
-    const updatedRequirement = { ...requ, [field]: value };
+  const handleRequirementChange = (
+    fieldOrUpdate: keyof Requirement | Partial<Requirement>, 
+    value?: any
+  ) => {
+    let updatedRequirement;
+    
+    if (typeof fieldOrUpdate === 'string') {
+      updatedRequirement = { ...requ, [fieldOrUpdate]: value };
+    } else {
+      updatedRequirement = { ...requ, ...fieldOrUpdate };
+    }
+  
     onRequirementChange(updatedRequirement);
   };
 
@@ -37,14 +45,23 @@ export const EditRequirementPanel = ({
                 options={areaList}
                 optionLabel="name"
                 optionValue="areaId"
-                onChange={(e) => handleRequirementChange("areaType", e.value)}
+                onChange={(e) => {
+                  const selectedArea = areaList.find((area) => area.areaId === e.value);
+                  if (selectedArea) {
+                    const updatedRequirement = {
+                      ...requ,
+                      areaType: e.value,
+                      requiredLevel: Math.min(requ.requiredLevel, selectedArea.maxLevel) 
+                    };
+                    handleRequirementChange(updatedRequirement);
+                }}}
                 placeholder="Select an area"
                 className="col-5 requ-input"
               />
             </div>
             <div className="flex align-items-center mt-1">
               <span className="col-2">Area Level:</span>
-              <Slider
+              <InputNumber
                 value={requ.requiredLevel}
                 onChange={(e) =>
                   handleRequirementChange("requiredLevel", e.value)
@@ -55,8 +72,8 @@ export const EditRequirementPanel = ({
                     ?.maxLevel
                 }
                 className="col-5 requ-input"
+                showButtons
               />
-              <span className="ml-3">{requ.requiredLevel}</span>
             </div>
           </>
         );
@@ -84,6 +101,7 @@ export const EditRequirementPanel = ({
                 onValueChange={(e) => handleRequirementChange("count", e.value)}
                 placeholder="Enter count"
                 min={1}
+                showButtons
                 className="col-5 requ-input"
               />
             </div>
