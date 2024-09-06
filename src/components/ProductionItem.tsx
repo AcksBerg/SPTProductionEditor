@@ -93,7 +93,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
         group="declarative"
         visible={deleteDialogVisible}
         onHide={() => setDeleteDialogVisible(false)}
-        message="Are you sure you want to proceed?"
+        message="Are you sure you want to delete this production?"
         header="Confirmation"
         icon="pi pi-exclamation-triangle"
         accept={handleDeleteClick}
