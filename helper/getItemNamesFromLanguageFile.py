@@ -6,8 +6,14 @@ with open("./helper/en.json", encoding="UTF8") as file:
 items = {}
 
 temp_items = {}
-id_blacklist = ["5447b5cf4bdc2d65278b4567", # Handgun
-                "6602bcf19cc643f44a04274b" # Stash
+id_blacklist = ["5447b5cf4bdc2d65278b4567",  # Handgun
+                "6602bcf19cc643f44a04274b",  # Stashs
+                "5963866b86f7747bfa1c4462",
+                "5963866286f7747bf429b572",
+                "5811ce772459770e9e5f9532",
+                "5811ce662459770f6f490f32",
+                "5811ce572459770cba1a34ea",
+                "566abbc34bdc2d92178b4576"
                 ]
 for key, value in data.items():
     id_part, attribute = key.split(" ", 1)

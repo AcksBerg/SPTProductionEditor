@@ -624,11 +624,6 @@
         "shortname": "VOG-25",
         "description": "A 40mm VOG-25 underbarrel grenade launcher fragmentation round with an arming distance of 25-30 meters."
     },
-    "566abbc34bdc2d92178b4576": {
-        "name": "Stash",
-        "shortname": "Stash",
-        "description": "Somebody's badly camouflaged stash."
-    },
     "567143bf4bdc2d1a0f8b4567": {
         "name": "Pistol case",
         "shortname": "Pistols",
@@ -2014,21 +2009,6 @@
         "shortname": "PBS-4",
         "description": "The PBS-4 (Prib\u00f3r Bessh\u00famnoy Strel'b\u00fd - \"Silent Firing Device\") sound suppressor, manufactured by TsNIITochMash for use as a part of the \"Canary\" assault rifle grenade launcher system."
     },
-    "5811ce572459770cba1a34ea": {
-        "name": "Stash",
-        "shortname": "Stash",
-        "description": "Somebody's badly camouflaged stash."
-    },
-    "5811ce662459770f6f490f32": {
-        "name": "Stash",
-        "shortname": "Stash",
-        "description": "Somebody's badly camouflaged stash."
-    },
-    "5811ce772459770e9e5f9532": {
-        "name": "Stash",
-        "shortname": "Stash",
-        "description": "Somebody's badly camouflaged stash."
-    },
     "5827272a24597748c74bdeea": {
         "name": "SOK-12 Leapers UTG PRO MTU002 Long Top aluminum handguard",
         "shortname": "MTU002 L",
@@ -2963,16 +2943,6 @@
         "name": "AR-15 War Sport LVOA-C handguard (Black)",
         "shortname": "LVOA-C",
         "description": "The War Sport LVOA-C lightweight handguard is designed for use with sport rifles based on AR-15 rifles."
-    },
-    "5963866286f7747bf429b572": {
-        "name": "Stash",
-        "shortname": "Stash",
-        "description": "Somebody's badly camouflaged stash."
-    },
-    "5963866b86f7747bfa1c4462": {
-        "name": "Stash",
-        "shortname": "Stash",
-        "description": "Somebody's badly camouflaged stash."
     },
     "5991b51486f77447b112d44f": {
         "name": "MS2000 Marker",
