@@ -179,20 +179,10 @@
         "shortname": "6B43",
         "description": "The 6B43 bulletproof vest is designed for protection from light weapon bullets - including BP and PP - fragments of grenades, mines, and melee weapons, as well as reducing the risk of after-penetration effects during combat situations."
     },
-    "5485a8684bdc2da71d8b4567": {
-        "name": "Ammo",
-        "shortname": "Ammo",
-        "description": "Ammo"
-    },
     "557ff21e4bdc2d89578b4586": {
         "name": "Tactical glasses",
         "shortname": "TGlasses",
         "description": "A pair of commonplace tactical glasses with glare and impact protection."
-    },
-    "557ffd194bdc2d28148b457f": {
-        "name": "Pockets",
-        "shortname": "Pockets",
-        "description": "Pockets"
     },
     "5580169d4bdc2d9d138b4585": {
         "name": "MP-43-1C 12ga 510mm barrel",
@@ -378,11 +368,6 @@
         "name": "SureFire SOCOM556-MINI MONSTER 5.56x45 sound suppressor",
         "shortname": "556-MINI",
         "description": "The SureFire SOCOM556-MINI MONSTER 5.56x45 and .223 sound suppressor is a shorter version of the SOCOM556-MONSTER. Can only be installed on compatible SureFire muzzle devices."
-    },
-    "55d7217a4bdc2d86028b456d": {
-        "name": "Default Inventory",
-        "shortname": "Default Inventory",
-        "description": "Default Inventory"
     },
     "55f84c3c4bdc2d5f408b4576": {
         "name": "AR-15 Daniel Defense RIS II 9.5 handguard (Coyote Brown)",
@@ -1714,36 +1699,6 @@
         "shortname": "Wallet",
         "description": "A simple wallet for storing money."
     },
-    "578f8778245977358849a9b5": {
-        "name": "Jacket",
-        "shortname": "Jacket",
-        "description": "Jacket"
-    },
-    "578f8782245977354405a1e3": {
-        "name": "Safe",
-        "shortname": "Safe",
-        "description": "Safe"
-    },
-    "578f879c24597735401e6bc6": {
-        "name": "Cash register",
-        "shortname": "Cash register",
-        "description": "Cash register"
-    },
-    "578f87a3245977356274f2cb": {
-        "name": "Duffle bag",
-        "shortname": "Duffle bag",
-        "description": "Duffle bag"
-    },
-    "578f87ad245977356274f2cc": {
-        "name": "Wooden crate",
-        "shortname": "Wooden crate",
-        "description": "Wooden crate"
-    },
-    "578f87b7245977356274f2cd": {
-        "name": "Drawer",
-        "shortname": "Drawer",
-        "description": "Drawer"
-    },
     "579204f224597773d619e051": {
         "name": "Makarov PM (t) 9x18PM pistol",
         "shortname": "PM (t)",
@@ -2454,56 +2409,6 @@
         "shortname": "Woods",
         "description": "A paper plan map of Priozersk Natural Reserve."
     },
-    "5909d24f86f77466f56e6855": {
-        "name": "Medbag SMU06",
-        "shortname": "Medbag SMU06",
-        "description": "Medbag SMU06"
-    },
-    "5909d36d86f774660f0bb900": {
-        "name": "Grenade box",
-        "shortname": "Grenade box",
-        "description": "Grenade box"
-    },
-    "5909d45286f77465a8136dc6": {
-        "name": "Wooden ammo box",
-        "shortname": "Wooden ammo box",
-        "description": "Wooden ammo box"
-    },
-    "5909d4c186f7746ad34e805a": {
-        "name": "Medcase",
-        "shortname": "Medcase",
-        "description": "Medcase"
-    },
-    "5909d50c86f774659e6aaebe": {
-        "name": "Toolbox",
-        "shortname": "Toolbox",
-        "description": "Toolbox"
-    },
-    "5909d5ef86f77467974efbd8": {
-        "name": "Weapon box",
-        "shortname": "Weapon box",
-        "description": "Weapon box"
-    },
-    "5909d76c86f77471e53d2adf": {
-        "name": "Weapon box",
-        "shortname": "Weapon box",
-        "description": "Weapon box"
-    },
-    "5909d7cf86f77470ee57d75a": {
-        "name": "Weapon box",
-        "shortname": "Weapon box",
-        "description": "Weapon box"
-    },
-    "5909d89086f77472591234a0": {
-        "name": "Weapon box",
-        "shortname": "Weapon box",
-        "description": "Weapon box"
-    },
-    "5909e4b686f7747f5b744fa4": {
-        "name": "Dead Scav",
-        "shortname": "Dead Scav",
-        "description": "Dead Scav"
-    },
     "5909e99886f7740c983b9984": {
         "name": "USB Adapter",
         "shortname": "USB-A",
@@ -2774,11 +2679,6 @@
         "shortname": "Checkpoint",
         "description": "A key to the military base checkpoint gatehouse."
     },
-    "59139c2186f77411564f8e42": {
-        "name": "PC block",
-        "shortname": "PC block",
-        "description": "PC block"
-    },
     "5914578086f774123569ffa4": {
         "name": "Dorm room 108 key",
         "shortname": "Dorm 108",
@@ -2793,11 +2693,6 @@
         "name": "Weapon safe key",
         "shortname": "WSafe",
         "description": "A key to some weapon safe."
-    },
-    "5914944186f774189e5e76c2": {
-        "name": "Jacket",
-        "shortname": "Jacket",
-        "description": "Jacket"
     },
     "591ae8f986f77406f854be45": {
         "name": "Yotota car key",
@@ -2919,11 +2814,6 @@
         "shortname": "Machinery",
         "description": "A key to special machinery such as tank trucks, tractors, road-building machinery, etc."
     },
-    "5937ef2b86f77408a47244b3": {
-        "name": "Jacket",
-        "shortname": "Jacket",
-        "description": "Jacket"
-    },
     "5937fc6786f7742cab753590": {
         "name": "Silver pocket watch on a chain",
         "shortname": "Watch",
@@ -2963,11 +2853,6 @@
         "name": "Dorm room 114 key",
         "shortname": "Dorm 114",
         "description": "A key to the two-story dormitory with a tag reading \"114\" on it."
-    },
-    "59387ac686f77401442ddd61": {
-        "name": "Jacket",
-        "shortname": "Jacket",
-        "description": "Jacket"
     },
     "5938878586f7741b797c562f": {
         "name": "Secure Folder 0052",
@@ -3034,11 +2919,6 @@
         "shortname": "Hexagon AK-74",
         "description": "A sound moderator for AK-74 automatic rifles, manufactured by Hexagon."
     },
-    "5943d9c186f7745a13413ac9": {
-        "name": "Shrapnel",
-        "shortname": "Shrapnel",
-        "description": "Shrapnel"
-    },
     "5943ee5a86f77413872d25ec": {
         "name": "AR-15 PWS CQB 5.56x45 muzzle brake",
         "shortname": "PWS CQB",
@@ -3103,21 +2983,6 @@
         "name": "MS2000 Marker",
         "shortname": "MS2000",
         "description": "A strobe marker light that is used during nighttime operations. It emits signals in the IR region which are visible through NVGs. Uses a special filter when operating in the IR mode. If the filter is removed, it appears as a bright flash in the visible spectrum. In the extended mode operates with a blue flash."
-    },
-    "5996f6cb86f774678763a6ca": {
-        "name": "RGD-5 Shrapnel",
-        "shortname": "RGD-5 Shrapnel",
-        "description": "RGD-5 Shrapnel"
-    },
-    "5996f6d686f77467977ba6cc": {
-        "name": "MON-50 Shrapnel",
-        "shortname": "MON-50 Shrapnel",
-        "description": "MON-50 Shrapnel"
-    },
-    "5996f6fc86f7745e585b4de3": {
-        "name": "M67 Shrapnel",
-        "shortname": "M67 Shrapnel",
-        "description": "M67 Shrapnel"
     },
     "59984ab886f7743e98271174": {
         "name": "PP-19-01 \"Vityaz\" 9x19 submachine gun",
@@ -5224,11 +5089,6 @@
         "shortname": "Goshan reg.",
         "description": "A key to the Goshan store outlet cash registers at the ULTRA shopping mall."
     },
-    "5ad74cf586f774391278f6f0": {
-        "name": "Cash register TAR2-2",
-        "shortname": "Cash register TAR2-2",
-        "description": "Cash register TAR2-2"
-    },
     "5addaffe86f77470b455f900": {
         "name": "Kiba Arms inner grate door key",
         "shortname": "KIBA inner",
@@ -5333,16 +5193,6 @@
         "name": "MTs 20-01 stock",
         "shortname": "MTs 20-01",
         "description": "A standard stock for MTs 20-01 hunting rifles, but can be also installed on various different shotguns including the bolt-action TOZ-106."
-    },
-    "5ae083b25acfc4001a5fc702": {
-        "name": "Master Hand",
-        "shortname": "Master Hand",
-        "description": "Master Hand"
-    },
-    "5ae089fb5acfc408fb13989b": {
-        "name": "Trophy",
-        "shortname": "Trophy",
-        "description": "Trophy"
     },
     "5ae08f0a5acfc408fb1398a1": {
         "name": "Mosin 7.62x54R bolt-action rifle (Sniper)",
@@ -5473,11 +5323,6 @@
         "name": "Portable Powerbank",
         "shortname": "Powerbank",
         "description": "A portable rechargeable high-capacity battery."
-    },
-    "5af99e9186f7747c447120b8": {
-        "name": "Pockets Large",
-        "shortname": "Pockets Large",
-        "description": "Pockets Large"
     },
     "5afd7ded5acfc40017541f5e": {
         "name": "SKS TAPCO Intrafuse chassis",
@@ -6159,11 +6004,6 @@
         "shortname": "Bramit",
         "description": "A standard sound suppressor for the Mosin rifle."
     },
-    "5b9b9020e7ef6f5716480215": {
-        "name": "dogtagt",
-        "shortname": "dogtagt",
-        "description": "dogtagt"
-    },
     "5ba26383d4351e00334c93d9": {
         "name": "HK MP7A1 4.6x30 submachine gun",
         "shortname": "MP7A1",
@@ -6798,11 +6638,6 @@
         "name": "Trijicon ACOG TA01NSN 4x32 scope (Tan)",
         "shortname": "TA01NSN",
         "description": "Designed to the exact specifications of the US Special Operations Command for use by elite US forces, the Trijicon ACOG TA01NSN is Trijicon\u2019s most popular ACOG. The ranging reticle allows for bullet drop compensation out to 600 meters without any manual adjustments. Additional backup rear sights can be mounted. No batteries needed. Tan version."
-    },
-    "5c052cea86f7746b2101e8d8": {
-        "name": "Plastic suitcase",
-        "shortname": "Plastic suitcase",
-        "description": "Plastic suitcase"
     },
     "5c052e6986f7746b207bc3c9": {
         "name": "Portable defibrillator",
@@ -8114,21 +7949,6 @@
         "shortname": "Molot",
         "description": "A 75-round metal drum magazine for the RPK light machine gun. It fits in 7.62x39 AK and compatible weapon systems. Can also be supplied with .366 TKM ammo for use with the corresponding caliber AK-compatible weapons."
     },
-    "5cc0858d14c02e000c6bea66": {
-        "name": "BEAR standard upper",
-        "shortname": "",
-        "description": ""
-    },
-    "5cc085bb14c02e000e67a5c5": {
-        "name": "BEAR base lower",
-        "shortname": "",
-        "description": ""
-    },
-    "5cc0876314c02e000c6bea6b": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "5cc6ea78e4a949000e1ea3c1": {
         "name": "FN P90 charging handle",
         "shortname": "P90",
@@ -8319,21 +8139,6 @@
         "shortname": "B-32",
         "description": "A 12.7x108mm B-32 gl (GAU Index - 57-BZ-542, GRAU Index - 7B3-2) cartridge with a 48 gram armor-piercing incendiary bullet with a high-strength heat-treated steel core with an incendiary compound on the tip and a bimetallic jacket, in a brass case. This cartridge was introduced into service in 1936 for Soviet 12.7x108mm caliber weaponry, designed primarily to neutralize light armored vehicles as well as helicopters and to be able to neutralize hostile personnel behind light covers, not to mention its excellent results against the most modern specialized ballistic body protections as well as having a considerable stopping power effect and be able to inflict severe adverse effects on the target after impact."
     },
-    "5cde95d97d6c8b647a3769b0": {
-        "name": "USEC standard upper",
-        "shortname": "",
-        "description": ""
-    },
-    "5cde95ef7d6c8b04713c4f2d": {
-        "name": "USEC base lower",
-        "shortname": "",
-        "description": ""
-    },
-    "5cde95fa7d6c8b04737c2d13": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "5cde9e957d6c8b0474535da7": {
         "name": "USEC standard",
         "shortname": "",
@@ -8343,16 +8148,6 @@
         "name": "USEC standard",
         "shortname": "",
         "description": "Combat shirt"
-    },
-    "5cdea23c7d6c8b04723cf47b": {
-        "name": "Scav upper",
-        "shortname": "",
-        "description": ""
-    },
-    "5cdea3197d6c8b20b577f017": {
-        "name": "Scav upper 2",
-        "shortname": "",
-        "description": ""
     },
     "5cdea3f87d6c8b647a3769b2": {
         "name": "Adik sweatpants",
@@ -8654,11 +8449,6 @@
         "shortname": "OFZ",
         "description": "A 30mm high-explosive fragmentation projectile for a 30mm 2A42 cannon used on armored combat vehicles and helicopters."
     },
-    "5d07b91b86f7745a077a9432": {
-        "name": "Common fund stash",
-        "shortname": "Common fund stash",
-        "description": "Common fund stash"
-    },
     "5d08d21286f774736e7c94c3": {
         "name": "Shturman's stash key",
         "shortname": "SSK",
@@ -8909,106 +8699,6 @@
         "shortname": "WParts",
         "description": "Various weapon parts needed for replacing broken parts, or for the production of homemade weapons."
     },
-    "5d1f564b86f7744bcb0acd16": {
-        "name": "BEAR Summer Field",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f565786f7743f8362bcd5": {
-        "name": "BEAR contractor t-shirt",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f566d86f7744bcd13459a": {
-        "name": "BEAR Black Lynx",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f567786f7744bcc04874f": {
-        "name": "BEAR Ghost Marksman",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f568486f7744bca3f0b98": {
-        "name": "FSB Fast Response",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f56a686f7744bce0ee9eb": {
-        "name": "USEC PCU Ironsight",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f56c686f7744bcd13459c": {
-        "name": "USEC Aggressor TAC",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f56e486f7744bce0ee9ed": {
-        "name": "USEC Softshell Flexion",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f56f186f7744bcb0acd1a": {
-        "name": "USEC Woodland Infiltrator",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f56ff86f7743f8362bcd7": {
-        "name": "USEC PCS MultiCam",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f588e86f7744bcc048753": {
-        "name": "BEAR Summerfield",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f58a086f7743f8362bcd9": {
-        "name": "BEAR Gorka Kobra",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f58ab86f7743014162042": {
-        "name": "BEAR Striker Infil Ops",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f58bd86f7744bce0ee9ef": {
-        "name": "BEAR Gorka SSO",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f58cb86f7744bca3f0b9a": {
-        "name": "FSB Urban Tact",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f58ed86f7744bcb0acd1c": {
-        "name": "USEC Taclife Terrain",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f590486f7744bcd13459e": {
-        "name": "USEC Ranger Jeans",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f591186f7744bcc048755": {
-        "name": "USEC Gen.2 Khyber",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f592286f7743f8362bcdb": {
-        "name": "USEC Woodland Infiltrator",
-        "shortname": "",
-        "description": ""
-    },
-    "5d1f593286f7743014162044": {
-        "name": "USEC TACRES",
-        "shortname": "",
-        "description": ""
-    },
     "5d1f609d86f7744bca3f1689": {
         "name": "BEAR Black Lynx",
         "shortname": "",
@@ -9183,11 +8873,6 @@
         "name": "M700 thread protection cap (Stainless steel)",
         "shortname": "M700 cap",
         "description": "A stainless steel threading protection cap for the Remington M700 7.62x51 barrels."
-    },
-    "5d28ae4986f7742926686187": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "5d2c76ed48f03532f2136169": {
         "name": "AK AKademia Bastion dust cover",
@@ -9409,20 +9094,10 @@
         "shortname": "VS Combo",
         "description": "A combined kit of the VS-24 handguard with the VS-33c gas tube, can be installed on 5.56x45, 5.45x39, 7.62x39 AK family assault rifles. Manufactured by Vezhlivyy Strelok. White version."
     },
-    "5d4da0cb86f77450fe0a6629": {
-        "name": "usec_upper_commando",
-        "shortname": "",
-        "description": ""
-    },
     "5d4da10986f77450fc65edc3": {
         "name": "USEC Commando",
         "shortname": "",
         "description": "Sweater"
-    },
-    "5d4da36686f77421522b35ee": {
-        "name": "usec_upper_commando",
-        "shortname": "",
-        "description": ""
     },
     "5d52cc5ba4b9367408500062": {
         "name": "AGS-30 30x29mm automatic grenade launcher",
@@ -9488,16 +9163,6 @@
         "name": "FN Five-seveN MK2 5.7x28 pistol (FDE)",
         "shortname": "FN 5-7 FDE",
         "description": "FN Five-Seven, trademarked as the Five-seveN, is a semi-automatic pistol designed and manufactured by FN Herstal in Belgium. The pistol was developed in the early 1990s and features a cold hammer-forged barrel that is chrome-lined for extended service life. The polymer-framed Five-Seven offers single-action operation, low felt recoil, 20-round magazine capacity, and is equipped with an ambidextrous, forward-mounted manual safety, and an accessory rail that accepts tactical lights and lasers. This model features a Flat Dark Earth colored frame."
-    },
-    "5d6d2b5486f774785c2ba8ea": {
-        "name": "Ground cache",
-        "shortname": "Ground cache",
-        "description": "Ground cache"
-    },
-    "5d6d2bb386f774785b07a77a": {
-        "name": "Buried barrel cache",
-        "shortname": "Buried barrel cache",
-        "description": "Buried barrel cache"
     },
     "5d6d2e22a4b9361bd5780d05": {
         "name": "Oakley SI Gascan glasses",
@@ -9638,21 +9303,6 @@
         "name": "Gunpowder \"Hawk\"",
         "shortname": "Hawk",
         "description": "A tin with gunpowder. An essential resource for creating cartridges. A rare and high-quality mixture of high-energy ballistic gunpowder with stabilizing components."
-    },
-    "5d6fd13186f77424ad2a8c69": {
-        "name": "Ration supply crate",
-        "shortname": "Ration supply crate",
-        "description": "Ration supply crate"
-    },
-    "5d6fd45b86f774317075ed43": {
-        "name": "Technical supply crate",
-        "shortname": "Technical supply crate",
-        "description": "Technical supply crate"
-    },
-    "5d6fe50986f77449d97f7463": {
-        "name": "Medical supply crate",
-        "shortname": "Medical supply crate",
-        "description": "Medical supply crate"
     },
     "5d70e500a4b9364de70d38ce": {
         "name": "30x29mm VOG-30",
@@ -10009,21 +9659,6 @@
         "shortname": "T-5000M",
         "description": "An ergonomic pistol grip for the T-5000M bolt-action sniper rifle, manufactured by ORSIS."
     },
-    "5df89f1f86f77412631087ea": {
-        "name": "bear_upper_zaslon",
-        "shortname": "",
-        "description": ""
-    },
-    "5df89f8f86f77412672a1e38": {
-        "name": "bear_lower_oldschool",
-        "shortname": "",
-        "description": ""
-    },
-    "5df8a08886f7740bfe6df775": {
-        "name": "usec_lower_tier_2",
-        "shortname": "",
-        "description": ""
-    },
     "5df8a2ca86f7740bfe6df777": {
         "name": "6B2 body armor (Flora)",
         "shortname": "6B2",
@@ -10084,11 +9719,6 @@
         "shortname": "",
         "description": "Combat shirt"
     },
-    "5df8e65d86f77412672a1e46": {
-        "name": "Meteor",
-        "shortname": "",
-        "description": ""
-    },
     "5df8e72186f7741263108806": {
         "name": "BEAR Oldschool",
         "shortname": "",
@@ -10098,11 +9728,6 @@
         "name": "USEC TIER2",
         "shortname": "",
         "description": "Tactical pants"
-    },
-    "5df8e79286f7744a122d6836": {
-        "name": "Sklon",
-        "shortname": "",
-        "description": ""
     },
     "5df8f535bb49d91fb446d6b0": {
         "name": "AR-10 7.62x51 KAC 10-round steel magazine",
@@ -10424,26 +10049,6 @@
         "shortname": "",
         "description": "Telnik"
     },
-    "5e4bb31586f7740695730568": {
-        "name": "bear_upper_telnik",
-        "shortname": "",
-        "description": ""
-    },
-    "5e4bb35286f77406a511c9bc": {
-        "name": "usec_upper_tier_2",
-        "shortname": "",
-        "description": ""
-    },
-    "5e4bb39386f774067f79de05": {
-        "name": "bear_lower_combat",
-        "shortname": "",
-        "description": ""
-    },
-    "5e4bb3b586f77406812bd579": {
-        "name": "usec_lower_commando",
-        "shortname": "",
-        "description": ""
-    },
     "5e4bb5e486f77406796b7b9e": {
         "name": "USEC TIER2",
         "shortname": "",
@@ -10458,11 +10063,6 @@
         "name": "USEC Commando",
         "shortname": "",
         "description": "Field pants"
-    },
-    "5e4bb8e686f77406796b7ba2": {
-        "name": "Russia jacket",
-        "shortname": "",
-        "description": ""
     },
     "5e4bfc1586f774264f7582d3": {
         "name": "MSA Gallet TC 800 High Cut combat helmet (Black)",
@@ -10699,30 +10299,10 @@
         "shortname": "Sanitar",
         "description": "Sanitar's first aid kit."
     },
-    "5e99735686f7744bfc4af32c": {
-        "name": "Sanitar kit",
-        "shortname": "Sanitar kit",
-        "description": "Sanitar kit"
-    },
     "5e997f0b86f7741ac73993e2": {
         "name": "Sanitar's bag",
         "shortname": "Sanitar",
         "description": "A medical bag, often used by mid and low rank medical personnel, sometimes by doctors, for carrying tools and medicine."
-    },
-    "5e9d9fa986f774054d6b89f2": {
-        "name": "bear_upper_tiger",
-        "shortname": "",
-        "description": ""
-    },
-    "5e9da17386f774054b6f79a3": {
-        "name": "usec_upper_hoody",
-        "shortname": "",
-        "description": ""
-    },
-    "5e9da2a786f774054c19ac94": {
-        "name": "usec_upper_commando",
-        "shortname": "",
-        "description": ""
     },
     "5e9dacf986f774054d6b89f4": {
         "name": "FORT Defender-2 body armor",
@@ -10733,16 +10313,6 @@
         "name": "LBT-1961A Load Bearing Chest Rig (MAS Grey)",
         "shortname": "LBCR",
         "description": "A tactical load-bearing system designed to carry magazines, grenades, and special equipment, while using low-profile body armor. Manufactured by London Bridge Trading."
-    },
-    "5e9dc97c86f774054c19ac9a": {
-        "name": "bear_lower_tacliteTDU",
-        "shortname": "",
-        "description": ""
-    },
-    "5e9dcadd86f7743e20652f23": {
-        "name": "usec_lower_DeepRecon",
-        "shortname": "",
-        "description": ""
     },
     "5e9dcb8386f774054b6f79a9": {
         "name": "BEAR TIGR",
@@ -10768,11 +10338,6 @@
         "name": "LBT-8005A Day Pack backpack (MultiCam Black)",
         "shortname": "Day Pack",
         "description": "A simple and reliable 14-liter backpack in MultiCam Black camouflage. Manufactured by London Bridge Trading."
-    },
-    "5e9de109f6164249e54453d2": {
-        "name": "Motocross jacket",
-        "shortname": "",
-        "description": ""
     },
     "5ea02bb600685063ec28bfa1": {
         "name": "PPSh-41 7.62x25 10.6 inch barrel",
@@ -11169,26 +10734,6 @@
         "shortname": "Compass",
         "description": "A hand-held compass. Allows you to quickly navigate, indicating the direction of the magnetic poles of the Earth. With it, you can easily determine the azimuth."
     },
-    "5f5e401747344c2e4f6c42c5": {
-        "name": "bear_upper_g99",
-        "shortname": "",
-        "description": ""
-    },
-    "5f5e40400bc58666c37e7819": {
-        "name": "bear_lower_g99",
-        "shortname": "",
-        "description": ""
-    },
-    "5f5e4075df4f3100376a8138": {
-        "name": "user_upper_NightPatrol",
-        "shortname": "",
-        "description": ""
-    },
-    "5f5e40a06760b4138443b341": {
-        "name": "usec_lower_UrbanResponder",
-        "shortname": "",
-        "description": ""
-    },
     "5f5e45cc5021ce62144be7aa": {
         "name": "LolKek 3F Transfer tourist backpack",
         "shortname": "LK 3F",
@@ -11233,21 +10778,6 @@
         "name": "USEC Urban Responder",
         "shortname": "",
         "description": "Tactical pants"
-    },
-    "5f5f64f947344c2e4f6c431e": {
-        "name": "Scav Boot",
-        "shortname": "",
-        "description": ""
-    },
-    "5f5f65180bc58666c37e784a": {
-        "name": "Scav Hunter",
-        "shortname": "",
-        "description": ""
-    },
-    "5f5f653179db6e3f0e19b762": {
-        "name": "Scav Drystch",
-        "shortname": "",
-        "description": ""
     },
     "5f60b34a41e30a4ab12a6947": {
         "name": "Galvion Caiman Hybrid helmet (Grey)",
@@ -11368,11 +10898,6 @@
         "name": "23x75mm Shrapnel-25 buckshot",
         "shortname": "Shrap-25",
         "description": "A 23x75mmR \"Shrapnel-25\" buckshot round with a rated maximum effective range of 25 meters."
-    },
-    "5f68c4c217d579077152a252": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "5f745ee30acaeb0d490d8c5b": {
         "name": "Veritas guitar pick",
@@ -11709,11 +11234,6 @@
         "shortname": "UMP side",
         "description": "A side rail for the UMP SMG handguard, allows installation of additional tactical devices."
     },
-    "5fc613c80b735e7b024c76e2": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "5fc64ea372b0dd78d51159dc": {
         "name": "Cultist knife",
         "shortname": "Knife",
@@ -11744,35 +11264,10 @@
         "shortname": "DS150 FDE",
         "description": "A drop-in replacement buttstock for AR-15/M16 carbines. It uses mil-spec sized receiver extension tubes. The frame profile avoids snagging and shields the release latch, preventing accidental activation. It includes a standard 0.30\" thick rubber butt-pad to prevent slippage even with body armor or modular gear. Flat Dark Earth version."
     },
-    "5fce3e0cfe40296c1d5fd782": {
-        "name": "bear_tshirt_termo",
-        "shortname": "",
-        "description": ""
-    },
-    "5fce3e47fe40296c1d5fd784": {
-        "name": "bear_top_borey",
-        "shortname": "",
-        "description": ""
-    },
-    "5fce3e965a9f8c40685693bc": {
-        "name": "bear_lower_triarius",
-        "shortname": "",
-        "description": ""
-    },
     "5fce42bc187e6a2b994b8247": {
         "name": "BEAR SRVV",
         "shortname": "",
         "description": "Combat pants"
-    },
-    "5fcf63da5c287f01f22bf245": {
-        "name": "usec_upper_tier3",
-        "shortname": "",
-        "description": ""
-    },
-    "5fcf940bce1ba36a513bb9cc": {
-        "name": "usec_lower_tier3",
-        "shortname": "",
-        "description": ""
     },
     "5fcf9477fe40296c1d5fd7c8": {
         "name": "USEC TIER3",
@@ -11804,11 +11299,6 @@
         "shortname": "",
         "description": "Field jacket"
     },
-    "5fd3e9f71b735718c25cd9f8": {
-        "name": "usec_upper_acu",
-        "shortname": "",
-        "description": ""
-    },
     "5fd4c474dd870108a754b241": {
         "name": "5.11 Tactical Hexgrid plate carrier",
         "shortname": "Hexgrid",
@@ -11828,16 +11318,6 @@
         "name": "Gear Craft GC-BSS-MK1 chest rig (A-TACS FG)",
         "shortname": "BSS-MK1",
         "description": "The new generation shoulder belt system, made for patrol and assault operations."
-    },
-    "5fd7910ae3bfcf6cab4c9f55": {
-        "name": "Rain parka",
-        "shortname": "",
-        "description": ""
-    },
-    "5fd791b71189a17bcc172f16": {
-        "name": "Tourist",
-        "shortname": "",
-        "description": ""
     },
     "5fd8d28367cb5e077335170f": {
         "name": "Smoke balaclava",
@@ -11908,11 +11388,6 @@
         "name": "PL-15 rear sight",
         "shortname": "PL15 RS",
         "description": "A standard-issue rear sight for the PL-15 pistol."
-    },
-    "602543c13fee350cd564d032": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "602a95edda11d6478d5a06da": {
         "name": "PL-15 9x19 barrel",
@@ -11998,31 +11473,6 @@
         "name": "Soyuz-TM STM-9 Gen.2 9x19 carbine",
         "shortname": "STM-9",
         "description": "A PCC carbine with excellent performance already \"out of the box\", manufactured by Soyuz-TM Arms. Designed with the participation of world bronze medalist in Semi-Auto Rifle Vadim Mikhailov. Accuracy, speed, comfort of recoil. Compatible with Glock 9x19 magazines."
-    },
-    "6033a31e9ec839204e6a2f3e": {
-        "name": "top_bear_voin",
-        "shortname": "",
-        "description": ""
-    },
-    "6033a35f80ae5e2f970ba6bb": {
-        "name": "usec_top_beltstaff",
-        "shortname": "",
-        "description": ""
-    },
-    "6033a3d8ed2e0509b15f9031": {
-        "name": "bear_lower_voin",
-        "shortname": "",
-        "description": ""
-    },
-    "6033a3fee29c9f6c9b14e74e": {
-        "name": "usec_lower_beltstaff",
-        "shortname": "",
-        "description": ""
-    },
-    "6033a430ed2e0509b15f9033": {
-        "name": "wild_feet_scavelite_taclite",
-        "shortname": "",
-        "description": ""
     },
     "6033fa48ffd42c541047f728": {
         "name": "OPSMEN Earmor M32 headset",
@@ -12454,16 +11904,6 @@
         "shortname": "CR MK2 (R)",
         "description": "The \"Chest-Rig\" tactical system can be used as an independent piece of equipment or as an addition to body armor without the MOLLE system. Suitable for combat training instructors, special forces units. Recon preset in A-TACS FG camouflage. Manufactured by Stich Profi."
     },
-    "60a6aa8fd559ae040d0d951f": {
-        "name": "Mullen",
-        "shortname": "Mullen",
-        "description": "Mullen"
-    },
-    "60a6aaad42fd2735e4589978": {
-        "name": "Gavrilov",
-        "shortname": "Gavrilov",
-        "description": "Gavrilov"
-    },
     "60a7acf20c5cb24b01346648": {
         "name": "BOSS cap",
         "shortname": "Cap",
@@ -12518,11 +11958,6 @@
         "name": "MBT Integrated Navigation System",
         "shortname": "MBT NC",
         "description": "The central control block of the GALS-D3 navigational complex for T-72 and T-90 tanks."
-    },
-    "60c7272c204bc17802313365": {
-        "name": "Pockets 1x3",
-        "shortname": "Pockets 1x3",
-        "description": "Pockets 1x3"
     },
     "60db29ce99594040e04c4a27": {
         "name": "MTs-255-12 12ga shotgun",
@@ -13094,11 +12529,6 @@
         "shortname": "Letter",
         "description": "A package with correspondence."
     },
-    "61922589bb2cea6f7a22d964": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "619252352be33f26043400a7": {
         "name": "Laptop with information",
         "shortname": "Toughbook",
@@ -13449,40 +12879,10 @@
         "shortname": "CR cyl.",
         "description": "A 6-round .357 cylinder for Chiappa Rhino revolvers."
     },
-    "619f94f5b90286142b59d45f": {
-        "name": "Kolesnikov",
-        "shortname": "Kolesnikov",
-        "description": "Kolesnikov"
-    },
-    "619f9e338858a474c8685cc9": {
-        "name": "Grant",
-        "shortname": "Grant",
-        "description": "Grant"
-    },
     "61a00bcb177fb945751bbe6a": {
         "name": "Stolen military documents",
         "shortname": "Military documents",
         "description": "Stolen military documents"
-    },
-    "61a49f549128666d8302b5f1": {
-        "name": "Raincoat",
-        "shortname": "",
-        "description": ""
-    },
-    "61a4a06dba63c0388e05613e": {
-        "name": "Roadside maniac",
-        "shortname": "",
-        "description": ""
-    },
-    "61a4a138ba63c0388e056140": {
-        "name": "Bomber",
-        "shortname": "",
-        "description": ""
-    },
-    "61a4a1c59128666d8302b5f3": {
-        "name": "Lower bomber",
-        "shortname": "",
-        "description": ""
     },
     "61a4c8884f95bc3b2c5dc96f": {
         "name": "Chiappa Rhino 50DS .357 revolver",
@@ -13503,16 +12903,6 @@
         "name": "Rogue USEC stash key",
         "shortname": "Stash",
         "description": "A key to the stash, located somewhere at the Rogue USEC base."
-    },
-    "61aa1e9a32a4743c3453d2cf": {
-        "name": "Duffle bag",
-        "shortname": "Duffle bag",
-        "description": "Duffle bag"
-    },
-    "61aa1ead84ea0800645777fd": {
-        "name": "Medbag SMU06",
-        "shortname": "Medbag SMU06",
-        "description": "Medbag SMU06"
     },
     "61aa5aed32a4743c3453d319": {
         "name": "Police truck cabin key",
@@ -13643,16 +13033,6 @@
         "name": "RSP-30 reactive signal cartridge (Red)",
         "shortname": "Red",
         "description": "RSP-30 is a reactive signal cartridge for commanding and maintaining squad interaction. Multi-star rocket cartridges are used as flares."
-    },
-    "6223349b3136504a544d1608": {
-        "name": "Airdrop common supply crate",
-        "shortname": "Airdrop common supply crate",
-        "description": "Airdrop common supply crate"
-    },
-    "622334c873090231d904a9fc": {
-        "name": "Airdrop medical crate",
-        "shortname": "Airdrop medical crate",
-        "description": "Airdrop medical crate"
     },
     "622334fa3136504a544d160c": {
         "name": "Airdrop supply crate",
@@ -13879,26 +13259,6 @@
         "shortname": "G36 side",
         "description": "A side rail for the G36 handguards, allows installation of additional tactical devices."
     },
-    "624c0570c9b794431568f5d5": {
-        "name": "Signal flare (Green)",
-        "shortname": "Signal flare (Green)",
-        "description": "Signal flare (Green)"
-    },
-    "624c09cfbc2e27219346d955": {
-        "name": "Signal flare (Red)",
-        "shortname": "Signal flare (Red)",
-        "description": "Signal flare (Red)"
-    },
-    "624c09da2cec124eb67c1046": {
-        "name": "Signal flare (White)",
-        "shortname": "Signal flare (White)",
-        "description": "Signal flare (White)"
-    },
-    "624c09e49b98e019a3315b66": {
-        "name": "Signal flare (Yellow)",
-        "shortname": "Signal flare (Yellow)",
-        "description": "Signal flare (Yellow)"
-    },
     "624c0b3340357b5f566e8766": {
         "name": "RSP-30 reactive signal cartridge (Yellow)",
         "shortname": "Yellow",
@@ -14069,11 +13429,6 @@
         "shortname": "MSGL",
         "description": "M32A1 MSGL 40mm six-shot grenade launcher manufactured by Milkor USA. This grenade launcher uses the well-established principle of a revolver to achieve a high rate of accurate fire that can be quickly aimed at a target."
     },
-    "627a4e6b255f7527fb05a0f6": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "627bce33f21bc425b06ab967": {
         "name": "M32A1 40mm cylinder",
         "shortname": "MSGL",
@@ -14189,41 +13544,6 @@
         "shortname": "PM II 5-25x56",
         "description": "The Schmidt & Bender PM II 5-25x56 riflescope was originally created for elite military forces for high-quality target acquisition and pinpoint accuracy."
     },
-    "62875ad50828252c7a28b95c": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "628771f70828252c7a28b961": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "628796f2af0a053a6672c29a": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6287b0d239d8207cb27d66c7": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6287b14b66bb7d4a3c32bc94": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6287b16b05846043f15a790d": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "628a4645c9327c7587388849": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "628a60ae6b1d481ff772e9c8": {
         "name": "Rifle Dynamics RD-704 7.62x39 assault rifle",
         "shortname": "RD-704",
@@ -14249,11 +13569,6 @@
         "shortname": "Keymount",
         "description": "A muzzle brake by Dead Air Silencers designed for installation on AR-10-type systems and compatibles. The muzzle brake greatly reduces both recoil impulse and muzzle rise so that the user's weapon tracks straight back to keep them on target for faster shot-to-shot recovery."
     },
-    "628a6801805c5b6c100cc200": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "628a7b23b0f75035732dd565": {
         "name": "AK RD Enhanced V2 Rear Sight",
         "shortname": "V2 ERS",
@@ -14273,11 +13588,6 @@
         "name": "SAG AK-545 5.45x39 carbine",
         "shortname": "AK-545",
         "description": "The AK-545 carbine by Sureshot Armament Group, based on modern AK platforms."
-    },
-    "628b57d800f171376e7b2634": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "628b8d83717774443b15e248": {
         "name": "AK-545 SAG Mk. 2.1 gas tube",
@@ -14363,26 +13673,6 @@
         "name": "Peltor ComTac 4 Hybrid headset (Coyote Brown)",
         "shortname": "ComTac 4",
         "description": "The ComTac IV Hybrid Communication Headset is designed to help reduce exposure to hazardous levels of noise, improve situational awareness and at the same time enable two-way radio communication in noisy environments. The headset's electronics are contained completely inside the headset housing, eliminating the need for a large, heavy external radio control box. The headband mechanically stabilizes the headset to help relieve issues of earplugs dislodging from cable snags and body movement. Designed for comfortable use with a ballistic helmet."
-    },
-    "6295e63de08ed747e64ae991": {
-        "name": "bear_lower_tactical_long",
-        "shortname": "",
-        "description": ""
-    },
-    "6295e698e9de5e7b3751c47a": {
-        "name": "bear_upper_tactical_long",
-        "shortname": "",
-        "description": ""
-    },
-    "6295e8c3e08ed747e64aea00": {
-        "name": "usec_upper_chameleon_softshell",
-        "shortname": "",
-        "description": ""
-    },
-    "6295e944e9de5e7b3751c4da": {
-        "name": "usec_lower_chameleon_softshell",
-        "shortname": "",
-        "description": ""
     },
     "6295eb15869a02221651d318": {
         "name": "USEC Chameleon",
@@ -14563,16 +13853,6 @@
         "name": "Rogue USEC barrack key",
         "shortname": "Barrack",
         "description": "A key that opens one of the Rogues' makeshift barracks."
-    },
-    "62a9e7d15ea3b87d6f642a28": {
-        "name": "Danilov",
-        "shortname": "Danilov",
-        "description": "Danilov"
-    },
-    "62aca6a1310e67685a2fc2e7": {
-        "name": "Haywood",
-        "shortname": "Haywood",
-        "description": "Haywood"
     },
     "62e14904c2699c0ec93adc47": {
         "name": "SR-2M \"Veresk\" 9x21 submachine gun",
@@ -14909,11 +14189,6 @@
         "shortname": "Signal",
         "description": "A 26x75mm acid green flare cartridge for the SP-81 flare gun. The unusual color indicates that the cartridge is used for some special signals to \"friendlies\". Worth trying to and use it to save yourself when near aggressive Scavs and Bosses."
     },
-    "6353fe04f0de2294830a0dbe": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "6357c98711fb55120211f7e1": {
         "name": "M203 40mm underbarrel grenade launcher",
         "shortname": "M203",
@@ -14954,16 +14229,6 @@
         "shortname": "PM",
         "description": "A standard-issue slide for Makarov Pistol 9x18."
     },
-    "6377266693a3b4967208e42b": {
-        "name": "bear_upper_SpNa",
-        "shortname": "",
-        "description": ""
-    },
-    "6377315993a3b4967208e437": {
-        "name": "bear_lower_spna",
-        "shortname": "",
-        "description": ""
-    },
     "637784c5f7b3f4ac1a0d1a9a": {
         "name": "PM FAB Defense PM-G pistol grip",
         "shortname": "PM-G",
@@ -14999,20 +14264,10 @@
         "shortname": "PM TK",
         "description": "An ergonomic Makarov Pistol grip. Provides a comfortable grip and allows installation of additional accessories under the barrel. Manufactured by Gun Custom Tuning."
     },
-    "637b945722e2a933ed0e33c8": {
-        "name": "usec_upper_carinthia_softshell",
-        "shortname": "",
-        "description": ""
-    },
     "637b9c37b7e3bc41b21ce71a": {
         "name": "SR-2M pistol grip",
         "shortname": "SR-2M",
         "description": "A standard-issue pistol grip for SR-2M \"Veresk\". Manufactured by TsNIItochmash."
-    },
-    "637ba17aa10a96c2b605dbc2": {
-        "name": "usec_lower_carinthia_softshell",
-        "shortname": "",
-        "description": ""
     },
     "637ba19df7ca6372bf2613d7": {
         "name": "SR-2M polymer handguard (Black)",
@@ -15023,16 +14278,6 @@
         "name": "SR-2M pistol grip (Black)",
         "shortname": "SR-2M",
         "description": "A standard-issue pistol grip for SR-2M \"Veresk\". Manufactured by TsNIItochmash. Black version."
-    },
-    "637df25a1e688345e1097bd4": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "637df28ac22da5bb8d046935": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "637f57a68d137b27f70c4968": {
         "name": "AR-15 Colt M4 Carbine Length lower handguard",
@@ -15219,11 +14464,6 @@
         "shortname": "RIS II 12.25",
         "description": "The Daniel Defense RIS II 12.25 lower handguard. Made with light but durable aircraft aluminum alloy. Equipped with RIS interface for installation of additional devices and accessories. Coyote Brown version."
     },
-    "6391c6205dbbdb3b1b049840": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "6391fcf5744e45201147080f": {
         "name": "Primorsky Ave apartment key",
         "shortname": "Primorsky",
@@ -15238,11 +14478,6 @@
         "name": "Chemical container with samples",
         "shortname": "Chemcont",
         "description": "Hermetic container for storing various chemicals."
-    },
-    "6393082c1c8f182ad90c8961": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "6393262086e646067c176aa2": {
         "name": "Medical observation record",
@@ -15479,11 +14714,6 @@
         "shortname": "AlienTech",
         "description": "A competition steel muzzle brake with one closed and five open ports designed by George Gubich, a six-time champion in practical shooting in Russia. Installed on AR-15 family weapons."
     },
-    "63b35f281745dd52341e5da7": {
-        "name": "F1 Shrapnel",
-        "shortname": "F1 Shrapnel",
-        "description": "F1 Shrapnel"
-    },
     "63c6adcfb4ba094317063742": {
         "name": "PM rear sight",
         "shortname": "PM RS",
@@ -15508,11 +14738,6 @@
         "name": "AR-15 Hanson Carbine 5.56x45 16 inch barrel",
         "shortname": "Hanson 16\"",
         "description": "The Hanson Carbine barrel for AR-15 based weapons for 5.56x45 NATO ammo, 16 inch long."
-    },
-    "63dbd45917fff4dee40fe16e": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "63f4ba71f31d4a33b87bd046": {
         "name": "AR-15 Aeroknox AX-15 4 inch M-LOK handguard",
@@ -15548,11 +14773,6 @@
         "name": "Armasight Zeus-Pro scope eyecup",
         "shortname": "ZeusPro",
         "description": "A rubber eyecup for the Zeus Pro riflescope. Manufactured by Armasight."
-    },
-    "6401c7b213d9b818bf0e7dd7": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "6405ff6bd4578826ec3e377a": {
         "name": "AR-15 Aeroknox Butterfly 5.56x45 muzzle brake",
@@ -15623,106 +14843,6 @@
         "name": "SVT-40 7.62x54R 10-round magazine",
         "shortname": "SVT 10",
         "description": "A standard 7.62x54R 10-round magazine designed for the SVT rifle."
-    },
-    "642c18b8a6a0660b560fb31c": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642c19360a69698d1b049e12": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642c5273ff5ecad7810a89d7": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642d4d8eb6b75d4c89077cf9": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642d6941ff5ecad7810a8a61": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642d9bbf6c06444bf7033855": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642e71620a69698d1b049f0a": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642e8ae07e17c882400c4f87": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642ed297ac11c9eaf10d87e8": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642ed40af5bdf1c04e01952e": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "642eea6f881906a7fe086841": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6430119aac11c9eaf10d881b": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "64355a2b7e17c882400c50a0": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "64368d69ac11c9eaf10d890e": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6436a4c2b6b75d4c89077fbd": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6436b8d00a69698d1b04a0a1": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6436d9ec6c06444bf7033a4e": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6437ef59881906a7fe086aae": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "64381b582bb1c5dedd0fc925": {
-        "name": "WeaponStand_Stash_2",
-        "shortname": "",
-        "description": ""
-    },
-    "64381b6e44b37a080d0245b9": {
-        "name": "WeaponStand_Stash_3",
-        "shortname": "",
-        "description": ""
     },
     "643ea5b23db6f9f57107d9fd": {
         "name": "Tokarev SVT-40 7.62x54R rifle",
@@ -16349,21 +15469,6 @@
         "shortname": "AK-12 BT",
         "description": "A standard-issue buffer tube for AK-12 automatic rifles, manufactured by Izhmash."
     },
-    "64a2e970a74bb33d140e6dc5": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "64a2edba08d26f8d62049c06": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "64a436122d2c4e6e970f4117": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "64a536392d2c4e6e970f4121": {
         "name": "WARTECH TV-115 plate carrier (Olive Drab)",
         "shortname": "TV-115",
@@ -16378,11 +15483,6 @@
         "name": "Interceptor OTV body armor (UCP)",
         "shortname": "OTV",
         "description": "The Interceptor vest consists of a fabric Outer Tactical Vest (OTV) with dorsal and thoracic pockets and two protective ceramic-composite SAPI or ESAPI inserts. The Outer Tactical Vest (OTV) is a basic vest equipped with aramid fabric pouches that protect against ammunition fragments and 9mm handgun bullets."
-    },
-    "64ac23c449d74fd5ec0a124e": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "64ace9d9b5bf5e95f50a4c1d": {
         "name": "7.62x39mm FMJ ammo pack (20 pcs)",
@@ -16444,36 +15544,6 @@
         "shortname": "HP BT",
         "description": "A 20-round pack of 7.62x54R HP BT cartridges."
     },
-    "64ad2d8d7e2fcecf0305533f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64ad2dac6f9247c2f4012439": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64ad2dba0b9840e4c80c2485": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64ad2dc66f9247c2f401243d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64ad2dd30b9840e4c80c2489": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64ad4da55a592f21980c4723": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "64afc71497cf3a403c01ff38": {
         "name": "Granit Br5 ballistic plate",
         "shortname": "Granit Br5",
@@ -16493,31 +15563,6 @@
         "name": "ESAPI level IV ballistic plate",
         "shortname": "ESAPI IV",
         "description": "Enhanced Small Arms Protective Insert (ESAPI) is a ceramic ballistic plate for torso front and back pouches of plate carrier."
-    },
-    "64afee8e9f589807e30dc68a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64afeecb977493a0ee026213": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64afef49977493a0ee026217": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64b111fe1be308f1800688c1": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "64b11c08506a73f6a10f9364": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "64b6979341772715af0f9c39": {
         "name": "4.6x30mm JSP SX",
@@ -16619,11 +15664,6 @@
         "shortname": "PK",
         "description": "A standard-issue pistol grip for Kalashnikov Machine gun. Manufactured by V.A. Degtyarev Plant. Black version."
     },
-    "64cbd95a29b9b4283e216ff5": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "64ccc1d4a0f13c24561edf27": {
         "name": "Concordia apartment 34 room key",
         "shortname": "Conc 34",
@@ -16683,16 +15723,6 @@
         "name": "Sacred Amulet",
         "shortname": "Amulet",
         "description": "A mysterious amulet given to you by Lightkeeper. Serves as a reminder of the wearer's important role in Tarkov's history. Very fragile."
-    },
-    "64d116f41a9c6143a956127d": {
-        "name": "Bank cash register",
-        "shortname": "Bank cash register",
-        "description": "Bank cash register"
-    },
-    "64d11702dd0cd96ab82c3280": {
-        "name": "Bank safe",
-        "shortname": "Bank safe",
-        "description": "Bank safe"
     },
     "64d4b23dc1b37504b41ac2b6": {
         "name": "Rusted bloody key",
@@ -16757,16 +15787,6 @@
     "64e74a64aac4cd0a7264ecdf": {
         "name": "Picture 12",
         "shortname": "Picture 12",
-        "description": ""
-    },
-    "64ef3efdb63b74469b6c1499": {
-        "name": "USEC Predator",
-        "shortname": "",
-        "description": ""
-    },
-    "64ef3f3739e45b527a7c40ae": {
-        "name": "USEC Predator",
-        "shortname": "",
         "description": ""
     },
     "64ef3fa81a5f313cb144bf89": {
@@ -17044,16 +16064,6 @@
         "shortname": "PR-Taran",
         "description": "The PR-Taran baton with side handle is used by law enforcement agencies for protection and crowd control."
     },
-    "65424185a57eea37ed6562e9": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6542435ea57eea37ed6562f0": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "65434a4e4e3a01736a6c9706": {
         "name": "Hartman Lenok 70mm rail",
         "shortname": "Lenok",
@@ -17079,71 +16089,6 @@
         "shortname": "Korund-VM Side",
         "description": "Steel ballistic plate for side pouches of Russian bulletproof vests."
     },
-    "654a8976f414fcea4004d78b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a8ae00337d53f9102c2aa": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a8b0b0337d53f9102c2ae": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a8b3df414fcea4004d78f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a8b60f414fcea4004d793": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a8b80f414fcea4004d797": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a8ba90337d53f9102c2b2": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a8bc5f414fcea4004d79b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "654a90aff4f81a421b0a7c86": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "654a91068e1ce698150fd1e2": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "654a9189bcc67a392b056c79": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "6551fec55d0cf82e51014288": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "655200ba0ef76cf7be09d528": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
     "65573fa5655447403702a816": {
         "name": "Granit Br4 ballistic plate",
         "shortname": "Granit Br4",
@@ -17158,16 +16103,6 @@
         "name": "SAPI level III+ ballistic plate",
         "shortname": "SAPI III+",
         "description": "Small Arms Protective Insert (SAPI) is a ceramic ballistic plate for torso front and back pouches of plate carrier."
-    },
-    "6557519ac9b1d9bdcb0777e1": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "655751db58aa1b6dbd0cc295": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
     },
     "655c652d60d0ac437100fed7": {
         "name": "BEAR operative figurine",
@@ -17373,16 +16308,6 @@
         "name": "NewSphereTech level III ballistic plate",
         "shortname": "NST level III",
         "description": "An Aluminum Oxide ballistic plate for torso front and back pouches of plate carrier."
-    },
-    "656fd7c32668ef0402028fb9": {
-        "name": "1.25 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
-    },
-    "656fd89bf5a9631d4e042575": {
-        "name": "1.25 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
     },
     "657023a9126cc4a57d0e17a6": {
         "name": ".300 Blackout CBJ ammo pack (50 pcs)",
@@ -17989,180 +16914,10 @@
         "shortname": "SSA AP",
         "description": "A box of 5.56x45mm SSA AP cartridges, 100 pieces."
     },
-    "65702f87722744627e05cdb8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65702fe593b7ea9c330f4ce8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570305d93b7ea9c330f4ced": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65703472c9030b928a0a8a78": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65703d866584602f7d057a8a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65703fa06584602f7d057a8e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65703fe46a912c8b5c03468b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657040374e67e8ec7a0d261c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657044e971369562b300ce9b": {
-        "name": "Aluminum insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657045741bd9beedc40b7299": {
-        "name": "Aluminum insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657045b97e80617cee095bda": {
-        "name": "Aluminum insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570460471369562b300ce9f": {
-        "name": "Aluminum insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570495b45d573133d0d6adb": {
-        "name": "Armor steel insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657049d23425b19bbc0502f0": {
-        "name": "Armor steel insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65704de13e7bba58ea0285c8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657058fddf9b3231400e9188": {
-        "name": "BEAR OPS MGS",
-        "shortname": "",
-        "description": ""
-    },
-    "65705c3c14f2ed6d7d0b7738": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65705c777260e1139e091408": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65705cb314f2ed6d7d0b773c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65705cea4916448ae1050897": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570653e89fd4926380b733e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570658a89fd4926380b7346": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65707a89f5a6f1412f0c5f7b": {
-        "name": "BEAR URON",
-        "shortname": "",
-        "description": ""
-    },
-    "65707fc348c7a887f2010432": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570800612755ae0d907acf8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65708070f65e2491bf00972c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657080a212755ae0d907ad04": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657080ca12755ae0d907ad5e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65708122f65e2491bf009755": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65708165696fe382cf073255": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657087577f6d4590ac0d2109": {
-        "name": "13 mm aramid insert and ceramic plates",
-        "shortname": "",
-        "description": ""
-    },
-    "6570880f4a747dbb63005ee5": {
-        "name": "13 mm aramid insert and ceramic plates",
-        "shortname": "",
-        "description": ""
-    },
     "657089638db3adca1009f4ca": {
         "name": "Atomic Defense CQCM ballistic mask (Black)",
         "shortname": "CQCM",
         "description": "Atomic Defense's CQCM ballistic mask provides protection against short-range weapons including pistols, shotguns and knives. This heavyweight reinforced mask covers the wearer's face completely. It features an inner lining and wraps slightly around the sides of the head for added protection. The mask also features five-point adjustable straps to ensure a comfortable and precise fit."
-    },
-    "65708afe4a747dbb63005eee": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65708b4c4a747dbb63005ef3": {
-        "name": "13 mm aramid insert and ceramic plates",
-        "shortname": "",
-        "description": ""
     },
     "6570900858b315e8b70a8a98": {
         "name": "5.45x39mm 7N40 ammo pack (120 pcs)",
@@ -18184,216 +16939,6 @@
         "shortname": "Death Shadow",
         "description": "The \"Death Shadow\" mask for face protection, reinforced with aramid fibers."
     },
-    "6570df294cc0d2ab1e05ed74": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570df9c615f54368b04fca9": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e025615f54368b04fcb0": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e0610b57c03ec90b96ef": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e479a6560e4ee50c2b02": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e5100b57c03ec90b970a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e5674cc0d2ab1e05edbb": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e59b0b57c03ec90b970e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e83223c1f638ef0b0ede": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e87c23c1f638ef0b0ee2": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e8a623c1f638ef0b0ee6": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e8e7ab49e964120b4563": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570e90b3a5689d85f08db97": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f30b0921c914bf07964c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f35cd67d0309980a7acb": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f3890b4ae5847f060dad": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f3bb0b4ae5847f060db2": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f6e774d84423df065f21": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f71dd67d0309980a7af8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f74774d84423df065f25": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570f79c4c65ab77a6015121": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570fa1f4c65ab77a601512f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570fae34c65ab77a6015146": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570fb22584a51c23e03251f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570fb6ad3eefd23430f8c7c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570fb8f4c65ab77a601514d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570fbdd74d84423df065f60": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6570fc41d3eefd23430f8c83": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657112234269e9a568089eac": {
-        "name": "Layer of UHMWPE",
-        "shortname": "",
-        "description": ""
-    },
-    "657112a4818110db4600aa66": {
-        "name": "Layer of UHMWPE",
-        "shortname": "",
-        "description": ""
-    },
-    "657112ce22996eaf110881fb": {
-        "name": "Layer of UHMWPE",
-        "shortname": "",
-        "description": ""
-    },
-    "657112fa818110db4600aa6b": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "6571133d22996eaf11088200": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "6571138e818110db4600aa71": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "6571199565daf6aa960c9b10": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657119d49eb8c145180dbb95": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657119fea330b8c9060f7afc": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "65711b07a330b8c9060f7b01": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "65711b489eb8c145180dbb9d": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "65711b706d197c216005b31c": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "65711b9b65daf6aa960c9b1b": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "65711bc79eb8c145180dbba1": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
     "65719f0775149d62ce0a670b": {
         "name": "NPP KlASS Tor-2 helmet (Olive Drab)",
         "shortname": "Tor-2",
@@ -18404,415 +16949,10 @@
         "shortname": "Tor-2 FS",
         "description": "A special visor for the NPP KlASS Tor-2 helmet, made of heavy-duty glass."
     },
-    "6571b27a6d84a2b8b6007f92": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571baa74cb80d995d0a1490": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571baac6d84a2b8b6007fa3": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571bab0f41985531a038091": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571babb4076795e5e07383f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571babf4cb80d995d0a1494": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571bac34076795e5e073843": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
     "6571bde39837cc51b800c212": {
         "name": "Ghost half-mask",
         "shortname": "Ghost",
         "description": "A half-mask with a skull print."
-    },
-    "6571cad4c8673f00290f5657": {
-        "name": "USEC Defender",
-        "shortname": "",
-        "description": ""
-    },
-    "6571cb0923aa6d72760a7f8f": {
-        "name": "USEC BOSS Delta",
-        "shortname": "",
-        "description": ""
-    },
-    "6571dbd388ead79fcf091d71": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571dbda88ead79fcf091d75": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571dbe07c02ae206002502e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571dbeaee8ec43d520cf89e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6571dbef88ead79fcf091d79": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e048371fccfbf909d5d8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e059371fccfbf909d5dc": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e06219b4b511af012f89": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e06819b4b511af012f8d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e5221b5bc1185508c24f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e52f73c0eabb700109a0": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e53c73c0eabb700109a4": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572e54873c0eabb700109a8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572eafead200ced8e0f051a": {
-        "name": "BEAR MGS",
-        "shortname": "",
-        "description": ""
-    },
-    "6572eb0e55beba16bc04079f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572eb1b04ee6483ef039882": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572eb3004ee6483ef039886": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572eb3b04ee6483ef03988a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572eb865b5eac12f10a03ee": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572f1ca4c8d903cc60c874e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572f1d60103b4a3270332db": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572f1e10103b4a3270332df": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572f1edea457732140ce875": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572f1f7ea457732140ce879": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572fc809a866b80ab07eb59": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572fc8c9a866b80ab07eb5d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572fc989a866b80ab07eb61": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6572fca39a866b80ab07eb65": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65730c0e292ecadbfa09ad49": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65730c2213a2f660f60bea96": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65730c2b292ecadbfa09ad50": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65730c35292ecadbfa09ad54": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6573101e292ecadbfa09b389": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6573102b292ecadbfa09b38d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731038292ecadbfa09b391": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731045f31d5be00e08a75a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657316a92dba425ccc0141a4": {
-        "name": "USEC Delta",
-        "shortname": "",
-        "description": ""
-    },
-    "65731b46cea9255e2102360a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731b4fcea9255e2102360e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731b576e709cddd001ec3f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731b60ff6dc44a7d068c4a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731b666e709cddd001ec43": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731b6b6042b0f210020ef6": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65731b716e709cddd001ec47": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657322988c1cc6dcd9098b2d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657322a4cea9255e21023651": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657322acd9d89ff7ac0d961b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657322b7d9d89ff7ac0d961f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65732688d9d89ff7ac0d9c4c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657326978c1cc6dcd9098b56": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657326a28c1cc6dcd9098b5a": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657326b08c1cc6dcd9098b5e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657326bc5d3a3129fb05f36b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65732de75d3a3129fb05f3dd": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65732df4d0acf75aea06c87b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65732e05d0acf75aea06c87f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65732e0f6784ca384b0167ad": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65732e215d3a3129fb05f3e1": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65732e30dd8739f6440ef383": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65733312ca0ca984940a2d53": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657333232cc8dfad2c0a3d97": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657333302cc8dfad2c0a3d9b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6573333eca0ca984940a2d57": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6573334aca0ca984940a2d5b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65733375b7a8d286530e3dd7": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6573337f2cc8dfad2c0a3da7": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65749b8fe32c4e3f7907bf42": {
-        "name": "Bratva",
-        "shortname": "",
-        "description": ""
-    },
-    "65749ba32fdb04fb79092d37": {
-        "name": "Bratva 2",
-        "shortname": "",
-        "description": ""
-    },
-    "65749bcce32c4e3f7907bf44": {
-        "name": "Gus",
-        "shortname": "",
-        "description": ""
-    },
-    "65749be133fdc9c0cf06d3c8": {
-        "name": "Den",
-        "shortname": "",
-        "description": ""
-    },
-    "65749c05e0423b9ebe0c79c7": {
-        "name": "Bratva pants",
-        "shortname": "",
-        "description": ""
-    },
-    "65749c1fe32c4e3f7907bf47": {
-        "name": "Bratva pants 2",
-        "shortname": "",
-        "description": ""
     },
     "65749cb8e0423b9ebe0c79c9": {
         "name": "Gus baseball cap",
@@ -18824,460 +16964,10 @@
         "shortname": "Basmach",
         "description": "A real bandit's attribute - the black leather baseball cap."
     },
-    "6574aa9a1b144de18c0fba45": {
-        "name": "Nikolaev",
-        "shortname": "Nikolaev",
-        "description": "Nikolaev"
-    },
-    "6574aabee0423b9ebe0c79cf": {
-        "name": "Blackburn",
-        "shortname": "Blackburn",
-        "description": "Blackburn"
-    },
     "6575a6ca8778e96ded05a802": {
         "name": "TerraGroup scientist's hard drive",
         "shortname": "HDD",
         "description": "A random access storage device (information storage device), based on the magnetic recording principle. Contains various compromising data on TerraGroup."
-    },
-    "6575bc88c6700bd6b40e8a57": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575bca0dc9932aed601c5d7": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c2adefc786cd9101a5d9": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c2be52b7f8c76a05ee25": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c2cd52b7f8c76a05ee29": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c2d852b7f8c76a05ee2d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c2e4efc786cd9101a5dd": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c2f7efc786cd9101a5e1": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c30352b7f8c76a05ee31": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c31b52b7f8c76a05ee35": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c326c6700bd6b40e8a80": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c342efc786cd9101a5e5": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c34bc6700bd6b40e8a84": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c35bc6700bd6b40e8a88": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c366c6700bd6b40e8a8c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c373dc9932aed601c5ec": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c385dc9932aed601c5f0": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c390efc786cd9101a5e9": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c3b3dc9932aed601c5f4": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c3beefc786cd9101a5ed": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c3cdc6700bd6b40e8a90": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c3dfdc9932aed601c5f8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c3ec52b7f8c76a05ee39": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c3fd52b7f8c76a05ee3d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575c40c52b7f8c76a05ee41": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ce3716c2762fba0057fd": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ce45dc9932aed601c616": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ce5016c2762fba005802": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ce5befc786cd9101a671": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ce6f16c2762fba005806": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ce8bdc9932aed601c61e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ce9db15fef3dd4051628": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575cea8b15fef3dd405162c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d561b15fef3dd4051670": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d56b16c2762fba005818": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d57a16c2762fba00581c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d589b15fef3dd4051674": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d598b15fef3dd4051678": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d5a616c2762fba005820": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d5b316c2762fba005824": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d5bd16c2762fba005828": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d9a79e27f4a85e08112d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d9b8945bf78edd04c427": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d9c40546f8b1de093dee": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d9cf0546f8b1de093df2": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d9d8945bf78edd04c42b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d9e7945bf78edd04c42f": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575d9f816c2762fba00588d": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575da07945bf78edd04c433": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575da159e27f4a85e081131": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575dd3e9e27f4a85e081142": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575dd519e27f4a85e081146": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575dd64945bf78edd04c438": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575dd6e9d3a0ddf660b9047": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575dd769d3a0ddf660b904b": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575dd800546f8b1de093df6": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575dd94945bf78edd04c43c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575e71760703324250610c3": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575e72660703324250610c7": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ea3060703324250610da": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ea4cf6a13a7b7100adc4": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ea5cf6a13a7b7100adc8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ea6760703324250610de": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ea719c7cad336508e418": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ea7c60703324250610e2": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ef599c7cad336508e453": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ef6bf6a13a7b7100b093": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ef78da698a4e980677eb": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575ef7f9c7cad336508e457": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575f24ff6a13a7b7100b09e": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575f25ada698a4e98067836": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575f2649cfdfe416f0399b8": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575f26d9c7cad336508e480": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575f5cbf6a13a7b7100b0bf": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6575f5e1da698a4e98067869": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65764275d8537eb26a0355e9": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657642b0e6d5dd75f40688a5": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "6576434820cc24d17102b148": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657643732bc38ef78e076477": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "657643a220cc24d17102b14c": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65764a4cd8537eb26a0355ee": {
-        "name": "6.5 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
-    },
-    "65764bc22bc38ef78e076485": {
-        "name": "1.25 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
-    },
-    "65764c39526e320fbe035777": {
-        "name": "Aramid insert",
-        "shortname": "",
-        "description": ""
-    },
-    "65764c6b526e320fbe03577b": {
-        "name": "6.5 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
-    },
-    "65764e1e2bc38ef78e076489": {
-        "name": "6.5 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
-    },
-    "65764fae2bc38ef78e07648d": {
-        "name": "1.25 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
-    },
-    "6576500f526e320fbe03577f": {
-        "name": "1.25 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
-    },
-    "6576504b526e320fbe035783": {
-        "name": "6.5 mm aramid insert and titanium plates",
-        "shortname": "",
-        "description": ""
     },
     "6576f4708ca9c4381d16cd9d": {
         "name": "9x21mm 7N42 \"Zubilo\"",
@@ -19339,221 +17029,6 @@
         "shortname": "Korund-VM-K Back",
         "description": "A ceramic plate for torso rear pouch of 6b23-1, 6b23-2, Korund and Bagariy bulletproof vests."
     },
-    "657ba096e57570b7f80a17fb": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba145e57570b7f80a17ff": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba18923918923cb0df568": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba2eef58ba5a625010798": {
-        "name": "Layer of plastic",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba34b9ba22f103e08139b": {
-        "name": "Layer of plastic",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba50c23918923cb0df56c": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba5439ba22f103e08139f": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba57af58ba5a62501079e": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba6c3c6f689d3a205b857": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba737b7e9ca9a02045bf6": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba75e23918923cb0df573": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba85ecfcf63c951052da7": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba8bccfcf63c951052dab": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657ba8eab7e9ca9a02045bfd": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657baaf0b7e9ca9a02045c02": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657bab6ec6f689d3a205b85f": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657babc6f58ba5a6250107a2": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657bae18b7e9ca9a02045c0a": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657baeaacfcf63c951052db3": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657baecbc6f689d3a205b863": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657bb70486c7f9ef7a009936": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657bb79ba1c61ee0c303631a": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657bb7d7b30eca9763051176": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657bb92fa1c61ee0c303631f": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657bb99db30eca976305117f": {
-        "name": "Layers of aramid fiber",
-        "shortname": "",
-        "description": ""
-    },
-    "657bbad7a1c61ee0c3036323": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657bbb31b30eca9763051183": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657bbcc9a1c61ee0c3036327": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657bbcffbbd440df880b2dd5": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657bbe73a1c61ee0c303632b": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657bbed0aab96fccee08be96": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657bbefeb30eca9763051189": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657bc06daab96fccee08be9b": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657bc0d8a1c61ee0c303632f": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657bc107aab96fccee08be9f": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657bc285aab96fccee08bea3": {
-        "name": "Titanium alloy",
-        "shortname": "",
-        "description": ""
-    },
-    "657bc2c5a1c61ee0c3036333": {
-        "name": "Titanium alloy",
-        "shortname": "",
-        "description": ""
-    },
-    "657bc2e7b30eca976305118d": {
-        "name": "Titanium alloy",
-        "shortname": "",
-        "description": ""
-    },
-    "657c2ed3cf82c352301b830e": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "657f8a8d7db258e5600fe33d": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f8b05f4c82973640b2348": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f8b43f92cd718b70154fb": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f8b94f92cd718b70154ff": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
     "657f8e6ccbb8470421442525": {
         "name": "USEC Defender",
         "shortname": "",
@@ -19564,16 +17039,6 @@
         "shortname": "",
         "description": "Tactical shirt"
     },
-    "657f8ec5f4c82973640b234c": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f8f10f4c82973640b2350": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
     "657f90b67ba4217c5e65b6e7": {
         "name": "BEAR URON",
         "shortname": "",
@@ -19583,101 +17048,6 @@
         "name": "BEAR OPS MGS",
         "shortname": "",
         "description": "Tactical jacket"
-    },
-    "657f925dada5fadd1f07a57a": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f92acada5fadd1f07a57e": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f92e7f4c82973640b2354": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f95bff92cd718b701550c": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9605f4c82973640b2358": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9897f4c82973640b235e": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f98fbada5fadd1f07a585": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9a55c6679fefb3051e19": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9a94ada5fadd1f07a589": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9c78ada5fadd1f07a58d": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9cb587e11c61f70bfaca": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9eb7e9433140ad0baf86": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657f9ef6c6679fefb3051e1f": {
-        "name": "Armor steel",
-        "shortname": "",
-        "description": ""
-    },
-    "657fa009d4caf976440afe3a": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657fa04ac6679fefb3051e24": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657fa07387e11c61f70bface": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657fa0fcd4caf976440afe3e": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657fa168e9433140ad0baf8e": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
-    },
-    "657fa186d4caf976440afe42": {
-        "name": "Hybrid composite materials",
-        "shortname": "",
-        "description": ""
     },
     "65815f0e647e3d7246384e14": {
         "name": "Pack of Tarker dried meat",
@@ -19734,26 +17104,6 @@
         "shortname": "REA",
         "description": "A key to the office inside the city real estate agency. "
     },
-    "6582e6bb0c3b9823fe6d1840": {
-        "name": "Scav body",
-        "shortname": "Scav body",
-        "description": "Scav body"
-    },
-    "6582e6c6edf14c4c6023adf2": {
-        "name": "Lab technician body",
-        "shortname": "Lab technician body",
-        "description": "Lab technician body"
-    },
-    "6582e6d7b14c3f72eb071420": {
-        "name": "PMC body",
-        "shortname": "PMC body",
-        "description": "PMC body"
-    },
-    "658420d8085fea07e674cdb6": {
-        "name": "Dead civilian",
-        "shortname": "",
-        "description": ""
-    },
     "65ca457b4aafb5d7fc0dcb5d": {
         "name": "United Cutlery M48 Tactical Kukri",
         "shortname": "M48 Kukri",
@@ -19763,11 +17113,6 @@
         "name": "Mark of The Unheard",
         "shortname": "Unheard",
         "description": "A radio transmitter reconfigured by unknown assailants. It's impossible to determine the modification technology, nor is it likely to figure out what kind of signal it's transmitting. When the user is in the area of low intensity combat zone (PVE) the user of the device becomes visible in Fence's agent network. However, using this device, you have to follow his rules. Fence pays half of the money spent in the raid and coordinates the Scavs when searching for the user's lost equipment. If trusted enough by Fence, the user will not be attacked by Scavs as long as they keep their distance and show no aggression. In return, Fence requires to minimize damage to Scavs, and if the death of a Scav could not be avoided - to reduce the number of interference with his activities in the face of other PMCs in the area of the incident."
-    },
-    "65e080be269cbd5c5005e529": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "66015072e9f84d5680039678": {
         "name": "20x1mm toy gun",
@@ -19794,36 +17139,6 @@
         "shortname": "Unheard",
         "description": "An armband with a mysterious symbol that can be found in various parts of the city and its outskirts. Does this mean they are already among us?"
     },
-    "660436487502eca33a08cac8": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "660436a810bcdf80ff0e9f78": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "66043728333907134309d647": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "6604375110bcdf80ff0e9f7a": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "660437e57502eca33a08caca": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "660438077502eca33a08cacc": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "66043a3910bcdf80ff0e9f7c": {
         "name": "USEC AC Ranger Green",
         "shortname": "",
@@ -19844,31 +17159,6 @@
         "shortname": "",
         "description": "Tactical pants"
     },
-    "66043cc27502eca33a08cad0": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "66043cdcc8949a435906e430": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "66043cf87502eca33a08cad2": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "66043d59333907134309d649": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
-    "66043d7ac8949a435906e434": {
-        "name": "",
-        "shortname": "",
-        "description": ""
-    },
     "66043da77502eca33a08cad4": {
         "name": "BEAR Classic",
         "shortname": "",
@@ -19888,11 +17178,6 @@
         "name": "BEAR URON Coyote",
         "shortname": "",
         "description": "Combat pants"
-    },
-    "660440d2c8949a435906e43a": {
-        "name": "",
-        "shortname": "",
-        "description": ""
     },
     "660bbc47c38b837877075e47": {
         "name": "Encrypted flash drive",
@@ -19978,11 +17263,6 @@
         "name": "A pack of 'Easy money on betting' posters",
         "shortname": "Arena posters",
         "description": "A large pack of Arena posters supposed to be stashed at the Lighthouse.\n"
-    },
-    "664b69f3a082271bc46c4e13": {
-        "name": "quest_flyers4",
-        "shortname": "",
-        "description": ""
     },
     "664d3db6db5dea2bad286955": {
         "name": "Shatun's hideout",

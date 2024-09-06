@@ -22,6 +22,8 @@ for id_part, attributes in temp_items.items():
     if not (
         attributes.get("shortname") == "Item" or 
         attributes.get("description") == "Item"
+    ) and (
+        attributes.get("shortname") != attributes.get("description")
     ):
         items[id_part] = attributes
 
