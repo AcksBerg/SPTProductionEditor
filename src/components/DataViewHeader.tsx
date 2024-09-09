@@ -22,7 +22,7 @@ export const DataViewHeader = ({
   availableAreas,
 }: DataViewHeaderProps) => {
   const { setIsDialogVisible } = useContext(DialogContext);
-  const { setCurrentItem } = useContext(ProductionItemContext);
+  const { setCurrentItem,setIsNewProduction } = useContext(ProductionItemContext);
   return (
     <div className="flex justify-content-between">
       <div>
@@ -40,6 +40,7 @@ export const DataViewHeader = ({
         label="New production"
         onClick={() => {
           setCurrentItem(undefined);
+          setIsNewProduction(true);
           setIsDialogVisible(true);
         }}
         tooltip="Create new production item"

@@ -11,6 +11,7 @@ import { ProductionListContext } from "../context/ProductionListContext";
 import { ConfirmDialog } from "primereact/confirmdialog";
 import { formatTime } from "../utils/formatTime";
 import { RequirementPanel } from "./RequirementPanel";
+import { generateNewId } from "./EditProductionItem";
 
 interface ProductionItemProps {
   item: Production;
@@ -20,7 +21,7 @@ interface ProductionItemProps {
 export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
   const { setIsDialogVisible } = useContext(DialogContext);
-  const { setCurrentItem } = useContext(ProductionItemContext);
+  const { setCurrentItem, setIsNewProduction } = useContext(ProductionItemContext);
   const {
     removeProductionItem,
     moveProductionItem,
@@ -34,6 +35,16 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
 
   const handleDeleteClick = () => {
     removeProductionItem(item._id);
+  };
+  const handleCopyProduction = (item: Production) => {
+    const newProduction = {
+      ...item,
+      _id: generateNewId(),  
+    };
+
+    setIsNewProduction(true);
+    setCurrentItem(newProduction);
+    setIsDialogVisible(true);
   };
 
   const panelHeader = () => {
@@ -73,6 +84,13 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
             icon={PrimeIcons.PENCIL}
             onClick={() => handleEditClick()}
             tooltip="Edit production item"
+            tooltipOptions={{ position: "left" }}
+          />
+          <Button
+            className="panelHeader-button p-button-warning"
+            icon={PrimeIcons.COPY}
+            onClick={() => handleCopyProduction(item)}
+            tooltip="Copy production item"
             tooltipOptions={{ position: "left" }}
           />
           <Button

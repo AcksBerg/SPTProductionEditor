@@ -15,7 +15,7 @@ import { EditRequirementPanel } from "./EditRequirementPanel";
 import { ProductionListContext } from "../context/ProductionListContext";
 import { InputNumber } from "primereact/inputnumber";
 
-const generateNewId = (length: number = 24): string => {
+export const generateNewId = (length: number = 24): string => {
   let newId = "";
   const characters = "0123456789abcdef";
   for (let i = 0; i < length; i++) {
@@ -56,27 +56,31 @@ export const EditProductionItem = () => {
   const { addProductionItem, updateProductionItem } = useContext(
     ProductionListContext
   );
-  const { currentItem, setCurrentItem } = useContext(ProductionItemContext);
+  const { currentItem, setCurrentItem, setIsNewProduction, isNewProduction } =
+    useContext(ProductionItemContext);
   const [tempId, setTempId] = useState<string>("");
   const handleClose = () => {
     setTempId("");
     setCurrentItem(undefined);
     setIsDialogVisible(false);
+    setIsNewProduction(false);
   };
   const handleSave = () => {
     if (!production?.endProduct || production?.requirements.length < 1) {
       console.log("End Product and Requirments must be set.");
       return;
     }
+
     const updatedProduction = {
       ...production,
       _id: tempId + production._id,
       locked: production.requirements.some((r) => r.type === "QuestComplete"),
     };
-    if (currentItem) {
-      updateProductionItem(updatedProduction);
-    } else {
+
+    if (isNewProduction) {
       addProductionItem(updatedProduction);
+    } else {
+      updateProductionItem(updatedProduction);
     }
     handleClose();
   };
