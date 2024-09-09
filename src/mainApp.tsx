@@ -31,7 +31,7 @@ export const MainApp = () => {
       setSelectedArea(availableAreas[0]);
     }
     setIsProductionListMoveAvailable(searchItemName === "");
-  }, [searchItemName, availableAreas]);
+  }, [searchItemName, availableAreas, setIsProductionListMoveAvailable]);
 
   const filterDataView = (craft: Production) => {
     if (!selectedArea) return false;
@@ -52,7 +52,7 @@ export const MainApp = () => {
   return (
     <>
       <ConfirmDialog
-        group="declarative"
+        // group="declarative"
         visible={deleteDialogVisible}
         onHide={() => setDeleteDialogVisible(false)}
         message="Are you sure you want to delete ALL productions?"
@@ -77,7 +77,7 @@ export const MainApp = () => {
         tooltipOptions={{ position: "mouse" }}
       />
       <DataView
-        value={productionList.filter((craft) => filterDataView(craft))}
+        value={productionList.filter((craft:Production) => filterDataView(craft))}
         itemTemplate={(item) => (
           <ProductionItem item={item} selectedArea={selectedArea} />
         )}

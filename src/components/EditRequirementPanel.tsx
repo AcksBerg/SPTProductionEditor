@@ -51,7 +51,7 @@ export const EditRequirementPanel = ({
                     const updatedRequirement = {
                       ...requ,
                       areaType: e.value,
-                      requiredLevel: Math.min(requ.requiredLevel, selectedArea.maxLevel) 
+                      requiredLevel: Math.min(requ.requiredLevel ?? 0, selectedArea?.maxLevel ?? 0)
                     };
                     handleRequirementChange(updatedRequirement);
                 }}}

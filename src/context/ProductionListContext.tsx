@@ -5,7 +5,7 @@ import React, {
   ReactNode,
   useEffect,
 } from "react";
-import { Production } from "../types";
+import { Area, Production } from "../types";
 import initialProductionList from "../data/production.json";
 import areaList from "../data/area.json";
 
