@@ -178,7 +178,7 @@ export const EditProductionItem = () => {
           placeholder="Produces"
           value={production?.count}
           onChange={(e) => {
-            setProduction({ ...production!, count: e.value });
+            setProduction({ ...production!, count: e.value ?? 0 });
           }}
           min={1}
           className="col-5 requ-input"
@@ -191,7 +191,7 @@ export const EditProductionItem = () => {
           placeholder="Time in seconds"
           value={production?.productionTime}
           onChange={(e) => {
-            setProduction({ ...production!, productionTime: e.value });
+            setProduction({ ...production!, productionTime: e.value ?? 0 });
           }}
           mode="decimal"
           min={1}

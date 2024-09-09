@@ -12,6 +12,7 @@ import areaList from "../data/area.json";
 interface ProductionListContextType {
   productionList: Production[];
   availableAreas: Area[];
+  setAvailableAreas: React.Dispatch<React.SetStateAction<Area[]>>;
   setProductionList: React.Dispatch<React.SetStateAction<Production[]>>;
   addProductionItem: (item: Production) => void;
   updateProductionItem: (updatedItem: Production) => void;
@@ -131,6 +132,7 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
     return {
       productionList,
       availableAreas,
+      setAvailableAreas,
       setProductionList,
       addProductionItem,
       updateProductionItem,
@@ -139,6 +141,7 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
       isProductionListMoveAvailable,
       setIsProductionListMoveAvailable,
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productionList, availableAreas, isProductionListMoveAvailable]);
 
   return (

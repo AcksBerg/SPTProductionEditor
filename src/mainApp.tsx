@@ -17,13 +17,16 @@ export const MainApp = () => {
     setProductionList,
     setIsProductionListMoveAvailable,
     availableAreas,
-  } = useContext(ProductionListContext);
+  } = useContext(ProductionListContext)!;
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
   const [selectedArea, setSelectedArea] = useState<Area>({
     name: "All",
     areaId: -1,
     maxLevel: 0,
   });
+  if (!availableAreas) {
+    throw new Error("availableAreas is not available in ProductionListContext");
+  }
   const [searchItemName, setSearchItemName] = useState<string>("");
 
   useEffect(() => {
@@ -52,7 +55,6 @@ export const MainApp = () => {
   return (
     <>
       <ConfirmDialog
-        // group="declarative"
         visible={deleteDialogVisible}
         onHide={() => setDeleteDialogVisible(false)}
         message="Are you sure you want to delete ALL productions?"

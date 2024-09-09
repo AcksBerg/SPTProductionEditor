@@ -20,7 +20,7 @@ export const EditRequirementPanel = ({
 }: EditRequirementPanelProps) => {
   const handleRequirementChange = (
     fieldOrUpdate: keyof Requirement | Partial<Requirement>, 
-    value?: any
+    value?: unknown
   ) => {
     let updatedRequirement;
     

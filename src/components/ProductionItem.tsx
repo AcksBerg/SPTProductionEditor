@@ -26,7 +26,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
     removeProductionItem,
     moveProductionItem,
     isProductionListMoveAvailable,
-  } = useContext(ProductionListContext);
+  } = useContext(ProductionListContext)!;
 
   const handleEditClick = () => {
     setCurrentItem(item);
@@ -108,7 +108,6 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
   return (
     <>
       <ConfirmDialog
-        group="declarative"
         visible={deleteDialogVisible}
         onHide={() => setDeleteDialogVisible(false)}
         message="Are you sure you want to delete this production?"
