@@ -3,7 +3,7 @@ import { InputNumber } from "primereact/inputnumber";
 import areaList from "../data/area.json";
 import itemList from "../data/item.json";
 import questList from "../data/quest.json";
-import { Requirement } from "../types";
+import { ItemList, QuestList, Requirement } from "../types";
 import { Button } from "primereact/button";
 import { PrimeIcons } from "primereact/api";
 
@@ -18,6 +18,9 @@ export const EditRequirementPanel = ({
   onRequirementChange,
   onDelete
 }: EditRequirementPanelProps) => {
+
+  const items:ItemList = itemList;
+  const quests:QuestList = questList;
   const handleRequirementChange = (
     fieldOrUpdate: keyof Requirement | Partial<Requirement>, 
     value?: unknown
@@ -85,7 +88,7 @@ export const EditRequirementPanel = ({
               <Dropdown
                 value={requ.templateId}
                 options={Object.keys(itemList).map((id) => ({
-                  label: itemList[id].name,
+                  label: items[id].name,
                   value: id,
                 }))}
                 onChange={(e) => handleRequirementChange("templateId", e.value)}
@@ -114,7 +117,7 @@ export const EditRequirementPanel = ({
             <Dropdown
               value={requ.templateId}
               options={Object.keys(itemList).map((id) => ({
-                label: itemList[id].name,
+                label: items[id].name,
                 value: id,
               }))}
               onChange={(e) => handleRequirementChange("templateId", e.value)}
@@ -131,7 +134,7 @@ export const EditRequirementPanel = ({
             <Dropdown
               value={requ.questId}
               options={Object.keys(questList).map((id) => ({
-                label: questList[id],
+                label: quests[id],
                 value: id,
               }))}
               onChange={(e) => handleRequirementChange("questId", e.value)}

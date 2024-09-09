@@ -3,7 +3,7 @@ import { DialogContext } from "../context/DialogContext";
 import { DataView } from "primereact/dataview";
 import { useContext, useEffect, useState } from "react";
 import { ProductionItemContext } from "../context/ProductionItemContext";
-import { Production, Requirement } from "../types";
+import { ItemList, Production, Requirement } from "../types";
 import { Dropdown } from "primereact/dropdown";
 import areaList from "../data/area.json";
 import itemList from "../data/item.json";
@@ -59,6 +59,9 @@ export const EditProductionItem = () => {
   const { currentItem, setCurrentItem, setIsNewProduction, isNewProduction } =
     useContext(ProductionItemContext);
   const [tempId, setTempId] = useState<string>("");
+
+  const items: ItemList = itemList;
+
   const handleClose = () => {
     setTempId("");
     setCurrentItem(undefined);
@@ -86,7 +89,7 @@ export const EditProductionItem = () => {
   };
 
   const itemDropdownOptions = Object.keys(itemList).map((id) => ({
-    label: itemList[id].name,
+    label: items[id].name,
     value: id,
   }));
 
@@ -140,7 +143,7 @@ export const EditProductionItem = () => {
           disabled={!!currentItem}
         />
         <span className="ml-2">
-          {!!tempId ? tempId + production?._id : production?._id}
+          {tempId ? tempId + production?._id : production?._id}
         </span>
       </div>
       <div className="flex align-items-center mt-1">
