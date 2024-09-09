@@ -25,7 +25,7 @@ export interface Requirement {
   count?: number;
   isFunctional?: boolean;
   isEncoded?: boolean;
-  type: "Area" | "Item" | "QuestComplete" | "Tool" | "Resource" | "GameVersion";
+  type: string;
   questId?: string;
 }
 

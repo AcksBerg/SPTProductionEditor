@@ -53,9 +53,16 @@ const defaultProduction: Production = {
 
 export const EditProductionItem = () => {
   const { isDialogVisible, setIsDialogVisible } = useContext(DialogContext);
-  const { addProductionItem, updateProductionItem } = useContext(
-    ProductionListContext
-  );
+  const productionListContext = useContext(ProductionListContext);
+
+if (!productionListContext) {
+  throw new Error("ProductionListContext is undefined");
+}
+
+const { addProductionItem, updateProductionItem } = productionListContext;
+
+  
+
   const { currentItem, setCurrentItem, setIsNewProduction, isNewProduction } =
     useContext(ProductionItemContext);
   const [tempId, setTempId] = useState<string>("");
