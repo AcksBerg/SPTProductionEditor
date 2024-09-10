@@ -21,10 +21,10 @@ Requirements npm@9.2.0 and node.js@v18.19.1
 
 1. Clone the repository:
 
-   ````bash
+   ```bash
    git clone https://github.com/AcksBerg/SPTProductionEditor.git
-   cd SPTProductionEditor```
-   ````
+   cd SPTProductionEditor
+   ```
 
 2. npm install
 
