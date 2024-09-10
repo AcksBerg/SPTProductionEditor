@@ -65,15 +65,30 @@ export const MainApp = () => {
 
     reader.onloadend = function () {
       const base64DataUrl = reader.result as string;
-      const base64String = base64DataUrl.split(',')[1];
+      const base64String = base64DataUrl.split(",")[1];
       const jsonString = atob(base64String);
       setProductionList(JSON.parse(jsonString));
     };
   };
 
   const cardFooter = () => {
-    return <>Test</>;
+    return (
+      <>
+        <span>Disclaimer:</span>
+        <p>
+          The default production.json is located in:
+          \SPT_Data\Server\database\hideout\
+        </p>
+        <p>
+          This website does not use cookies. Everything runs locally on your
+          machine, and no data is transmitted to the server. This means that when
+          you reload the website, you will lose your progress. So, don't forget to
+          download the production.json file.
+        </p>
+      </>
+    );
   };
+  
   return productionList !== undefined ? (
     <>
       <ConfirmDialog
