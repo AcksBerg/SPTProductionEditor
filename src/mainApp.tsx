@@ -10,6 +10,9 @@ import { ProductionListContext } from "./context/ProductionListContext";
 import { EditProductionItem } from "./components/EditProductionItem";
 import { PrimeIcons } from "primereact/api";
 import { ConfirmDialog } from "primereact/confirmdialog";
+import { Card } from "primereact/card";
+import { FileUpload, FileUploadHandlerEvent } from "primereact/fileupload";
+import initialProductionList from "./data/production.json";
 
 export const MainApp = () => {
   const {
@@ -52,7 +55,26 @@ export const MainApp = () => {
     saveAs(blob, "production.json");
   };
 
-  return (
+  const customBase64Uploader = async (event: FileUploadHandlerEvent) => {
+    const file = event.files[0];
+    const reader = new FileReader();
+    const objectURL = URL.createObjectURL(file);
+    const blob = await fetch(objectURL).then((r) => r.blob());
+
+    reader.readAsDataURL(blob);
+
+    reader.onloadend = function () {
+      const base64DataUrl = reader.result as string;
+      const base64String = base64DataUrl.split(',')[1];
+      const jsonString = atob(base64String);
+      setProductionList(JSON.parse(jsonString));
+    };
+  };
+
+  const cardFooter = () => {
+    return <>Test</>;
+  };
+  return productionList !== undefined ? (
     <>
       <ConfirmDialog
         visible={deleteDialogVisible}
@@ -79,7 +101,9 @@ export const MainApp = () => {
         tooltipOptions={{ position: "mouse" }}
       />
       <DataView
-        value={productionList.filter((craft:Production) => filterDataView(craft))}
+        value={productionList?.filter((craft: Production) =>
+          filterDataView(craft)
+        )}
         itemTemplate={(item) => (
           <ProductionItem item={item} selectedArea={selectedArea} />
         )}
@@ -98,5 +122,36 @@ export const MainApp = () => {
       />
       <EditProductionItem />
     </>
+  ) : (
+    <div className="flex justify-content-center align-items-center">
+      <Card
+        header="Select one option"
+        className="w-6 mt-8 p-3"
+        footer={cardFooter}
+      >
+        <div className="flex justify-content-between">
+          <Button
+            icon={PrimeIcons.SUN}
+            label="New Production List"
+            onClick={() => setProductionList([])}
+          />
+          <Button
+            icon={PrimeIcons.STAR}
+            label="Default Production List"
+            className="mx-2"
+            onClick={() => setProductionList(initialProductionList)}
+          />
+          <FileUpload
+            mode="basic"
+            accept=".json"
+            url="/api/upload"
+            uploadHandler={customBase64Uploader}
+            customUpload
+            auto
+            chooseLabel="Upload a Production List"
+          />
+        </div>
+      </Card>
+    </div>
   );
 };

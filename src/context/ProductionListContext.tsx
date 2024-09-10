@@ -6,14 +6,13 @@ import React, {
   useEffect,
 } from "react";
 import { Area, Production } from "../types";
-import initialProductionList from "../data/production.json";
 import areaList from "../data/area.json";
 
 interface ProductionListContextType {
-  productionList: Production[];
+  productionList: Production[] | undefined;
   availableAreas: Area[];
   setAvailableAreas: React.Dispatch<React.SetStateAction<Area[]>>;
-  setProductionList: React.Dispatch<React.SetStateAction<Production[]>>;
+  setProductionList: React.Dispatch<React.SetStateAction<Production[] | undefined>>;
   addProductionItem: (item: Production) => void;
   updateProductionItem: (updatedItem: Production) => void;
   removeProductionItem: (id: string) => void;
@@ -35,14 +34,14 @@ export const ProductionListContext = createContext<
 export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [productionList, setProductionList] = useState<Production[]>(
-    initialProductionList
+  const [productionList, setProductionList] = useState<Production[] | undefined>(
+    undefined
   );
   const [availableAreas, setAvailableAreas] = useState<Area[]>([]);
   const [isProductionListMoveAvailable, setIsProductionListMoveAvailable] =
     useState(true);
   const addProductionItem = (item: Production) => {
-    const updatedList = [...productionList, item];
+    const updatedList = [...(productionList || []), item];
     setProductionList(updatedList);
     updateAvailableAreas(updatedList);
   };
@@ -59,10 +58,12 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
   };
 
   useEffect(() => {
+    if (!productionList) return;
     updateAvailableAreas(productionList);
   }, [productionList]);
 
   const updateProductionItem = (updatedItem: Production) => {
+    if (!productionList) return;
     const updatedList = productionList.map((item) =>
       item._id === updatedItem._id ? updatedItem : item
     );
@@ -71,6 +72,7 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
   };
 
   const removeProductionItem = (id: string) => {
+    if (!productionList) return;
     const updatedList = productionList.filter((item) => item._id !== id);
     setProductionList(updatedList);
     updateAvailableAreas(updatedList);
@@ -81,7 +83,9 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
     moveUp: boolean,
     areaId: number
   ) => {
+    if (!productionList) return;
     setProductionList((prevList) => {
+      if (!prevList) return;
       if (areaId === -1) {
         const index = prevList.findIndex((i) => i._id === item._id);
         if (index === -1) return prevList;
