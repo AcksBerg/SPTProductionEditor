@@ -39,8 +39,6 @@ Requirements npm@9.2.0 and node.js@v18.19.1
     ```
 4. Open your browser and visit http://localhost:3000. (or shown in the console)
 
-## Exporting
-After making your changes, download the updated production.json file and place it in your SPT server at \SPT_Data\Server\database\hideout\.
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for details.

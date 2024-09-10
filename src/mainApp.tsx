@@ -76,7 +76,7 @@ export const MainApp = () => {
       <>
         <span>Disclaimer:</span>
         <p>
-          The default production.json is located in:
+          The default production.json is located at:
           \SPT_Data\Server\database\hideout\
         </p>
         <p>
