@@ -25,7 +25,7 @@ export const EditRequirementPanel = ({
     fieldOrUpdate: keyof Requirement | Partial<Requirement>, 
     value?: unknown
   ) => {
-    let updatedRequirement;
+    let updatedRequirement = undefined;
     
     if (typeof fieldOrUpdate === 'string') {
       updatedRequirement = { ...requ, [fieldOrUpdate]: value };

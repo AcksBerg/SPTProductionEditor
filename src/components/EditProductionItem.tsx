@@ -219,7 +219,9 @@ export const EditProductionItem = () => {
             suffix=" s"
             className="col-5 requ-input"
           />
-          <span className="ml-2">{formatTime(production ? production!.productionTime : 60)}</span>
+          <span className="ml-2">
+            {formatTime(production ? production!.productionTime : 60)}
+          </span>
         </div>
         <DataView
           value={production?.requirements}
@@ -234,7 +236,7 @@ export const EditProductionItem = () => {
                     ...prevProduction!,
                     requirements: [
                       ...prevProduction!.requirements,
-                      defaultRequirement,
+                      { ...defaultRequirement },
                     ],
                   }));
                 }}
