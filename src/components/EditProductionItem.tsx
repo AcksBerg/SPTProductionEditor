@@ -124,7 +124,7 @@ export const EditProductionItem = () => {
     } else {
       setProduction(createDefaultProduction());
     }
-  }, [isNewProduction]);
+  }, [isNewProduction, currentItem]);
 
   const toast = useRef<Toast>(null);
   const showToast = () => {
