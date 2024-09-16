@@ -12,7 +12,9 @@ interface ProductionListContextType {
   productionList: Production[] | undefined;
   availableAreas: Area[];
   setAvailableAreas: React.Dispatch<React.SetStateAction<Area[]>>;
-  setProductionList: React.Dispatch<React.SetStateAction<Production[] | undefined>>;
+  setProductionList: React.Dispatch<
+    React.SetStateAction<Production[] | undefined>
+  >;
   addProductionItem: (item: Production) => void;
   updateProductionItem: (updatedItem: Production) => void;
   removeProductionItem: (id: string) => void;
@@ -25,6 +27,7 @@ interface ProductionListContextType {
   setIsProductionListMoveAvailable: React.Dispatch<
     React.SetStateAction<boolean>
   >;
+  existingIdsSet: Set<string>;
 }
 
 export const ProductionListContext = createContext<
@@ -34,9 +37,11 @@ export const ProductionListContext = createContext<
 export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [productionList, setProductionList] = useState<Production[] | undefined>(
-    undefined
-  );
+  const [productionList, setProductionList] = useState<
+    Production[] | undefined
+  >(undefined);
+
+  const [existingIdsSet, setExistingIdsSet] = useState<Set<string>>(new Set());
   const [availableAreas, setAvailableAreas] = useState<Area[]>([]);
   const [isProductionListMoveAvailable, setIsProductionListMoveAvailable] =
     useState(true);
@@ -50,16 +55,26 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
     const usedAreaTypes = Array.from(
       new Set(newProductionList.map((prod) => prod.areaType))
     );
-    const updatedAreas = [{ name: "All", areaId: -1, maxLevel: 0 }, ...areaList.filter((area) =>
-      usedAreaTypes.includes(area.areaId)
-    )];
-    
+    const updatedAreas = [
+      { name: "All", areaId: -1, maxLevel: 0 },
+      ...areaList.filter((area) => usedAreaTypes.includes(area.areaId)),
+    ];
+
     setAvailableAreas(updatedAreas);
   };
 
   useEffect(() => {
     if (!productionList) return;
     updateAvailableAreas(productionList);
+  }, [productionList]);
+
+  useEffect(() => {
+    if (productionList) {
+      const ids = new Set(productionList.map((production) => production._id));
+      setExistingIdsSet(ids);
+    } else {
+      setExistingIdsSet(new Set());
+    }
   }, [productionList]);
 
   const updateProductionItem = (updatedItem: Production) => {
@@ -144,9 +159,10 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
       moveProductionItem,
       isProductionListMoveAvailable,
       setIsProductionListMoveAvailable,
+      existingIdsSet
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [productionList, availableAreas, isProductionListMoveAvailable]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [productionList, availableAreas, isProductionListMoveAvailable,existingIdsSet]);
 
   return (
     <ProductionListContext.Provider value={contextValue}>

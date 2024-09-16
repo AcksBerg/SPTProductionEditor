@@ -16,13 +16,28 @@ import { ProductionListContext } from "../context/ProductionListContext";
 import { InputNumber } from "primereact/inputnumber";
 import { Toast } from "primereact/toast";
 
-export const generateNewId = (length: number = 24): string => {
-  let newId = "";
+export const generateNewId = (
+  existingIds: Set<string>,
+  length: number = 24
+): string => {
   const characters = "0123456789abcdef";
-  for (let i = 0; i < length; i++) {
-    const randomIndex = Math.floor(Math.random() * 16);
-    newId += characters[randomIndex];
+  let newId = "";
+  const maxAttempts = 1000;
+  let attempts = 0;
+
+  do {
+    newId = "";
+    for (let i = 0; i < length; i++) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+      newId += characters[randomIndex];
+    }
+    attempts++;
+  } while (existingIds.has(newId) && attempts < maxAttempts);
+
+  if (attempts === maxAttempts) {
+    throw new Error("Could not generate a new ID.");
   }
+
   return newId;
 };
 
@@ -37,21 +52,6 @@ const defaultRequirement: Requirement = {
   questId: "5936d90786f7742b1420ba5b",
 };
 
-const defaultProduction: Production = {
-  _id: generateNewId(),
-  areaType: 0,
-  requirements: [],
-  productionTime: 60,
-  needFuelForAllProductionTime: false,
-  locked: false,
-  endProduct: "5755383e24597772cb798966",
-  continuous: false,
-  count: 1,
-  productionLimitCount: 0,
-  isEncoded: false,
-  isCodeProduction: false,
-};
-
 export const EditProductionItem = () => {
   const { isDialogVisible, setIsDialogVisible } = useContext(DialogContext);
   const productionListContext = useContext(ProductionListContext);
@@ -60,14 +60,30 @@ export const EditProductionItem = () => {
     throw new Error("ProductionListContext is undefined");
   }
 
-  const { addProductionItem, updateProductionItem } = productionListContext;
+  const { addProductionItem, updateProductionItem, existingIdsSet } =
+    productionListContext;
   const [production, setProduction] = useState<Production | undefined>(
     undefined
   );
   const { currentItem, setCurrentItem, setIsNewProduction, isNewProduction } =
     useContext(ProductionItemContext);
   const [tempId, setTempId] = useState<string>("");
-
+  const createDefaultProduction = (): Production => {
+    return {
+      _id: generateNewId(existingIdsSet),
+      areaType: 0,
+      requirements: [],
+      productionTime: 60,
+      needFuelForAllProductionTime: false,
+      locked: false,
+      endProduct: "5755383e24597772cb798966",
+      continuous: false,
+      count: 1,
+      productionLimitCount: 0,
+      isEncoded: false,
+      isCodeProduction: false,
+    };
+  };
   const items: ItemList = itemList;
 
   const handleClose = () => {
@@ -106,7 +122,7 @@ export const EditProductionItem = () => {
     if (currentItem) {
       setProduction(currentItem);
     } else {
-      setProduction({ ...defaultProduction, _id: generateNewId() });
+      setProduction(createDefaultProduction());
     }
   }, [isNewProduction]);
 
@@ -152,7 +168,7 @@ export const EditProductionItem = () => {
               setTempId(e.target.value);
               setProduction({
                 ...production!,
-                _id: generateNewId(24 - tempId.length),
+                _id: generateNewId(existingIdsSet, 24 - tempId.length),
               });
             }}
             className="col-5"

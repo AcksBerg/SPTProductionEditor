@@ -26,6 +26,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
     removeProductionItem,
     moveProductionItem,
     isProductionListMoveAvailable,
+    existingIdsSet
   } = useContext(ProductionListContext)!;
 
   const handleEditClick = () => {
@@ -39,7 +40,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
   const handleCopyProduction = (item: Production) => {
     const newProduction = {
       ...item,
-      _id: generateNewId(),  
+      _id: generateNewId(existingIdsSet),  
     };
 
     setIsNewProduction(true);
