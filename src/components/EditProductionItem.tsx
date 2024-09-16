@@ -61,7 +61,9 @@ export const EditProductionItem = () => {
   }
 
   const { addProductionItem, updateProductionItem } = productionListContext;
-
+  const [production, setProduction] = useState<Production | undefined>(
+    undefined
+  );
   const { currentItem, setCurrentItem, setIsNewProduction, isNewProduction } =
     useContext(ProductionItemContext);
   const [tempId, setTempId] = useState<string>("");
@@ -70,9 +72,10 @@ export const EditProductionItem = () => {
 
   const handleClose = () => {
     setTempId("");
+    setProduction(undefined);
     setCurrentItem(undefined);
-    setIsDialogVisible(false);
     setIsNewProduction(false);
+    setIsDialogVisible(false);
   };
   const handleSave = () => {
     if (!production?.endProduct || production?.requirements.length < 1) {
@@ -99,29 +102,30 @@ export const EditProductionItem = () => {
     value: id,
   }));
 
-  const [production, setProduction] = useState<Production | undefined>(
-    undefined
-  );
-
   useEffect(() => {
     if (currentItem) {
       setProduction(currentItem);
     } else {
+      console.log("New Production")
       setProduction({ ...defaultProduction, _id: generateNewId() });
     }
-  }, [currentItem]);
+  }, [isNewProduction]);
 
   const toast = useRef<Toast>(null);
   const showToast = () => {
-    toast.current?.show({severity:'error', summary: 'Missing Input', detail: "End Product and Requirments must be set."});
-  }
+    toast.current?.show({
+      severity: "error",
+      summary: "Missing Input",
+      detail: "End Product and Requirments must be set.",
+    });
+  };
 
   if (!isDialogVisible) return null;
   const createNewItem = !currentItem;
 
   return (
     <>
-    <Toast ref={toast}/>
+      <Toast ref={toast} />
       <Dialog
         header={createNewItem ? "New Production" : "Edit Production"}
         footer={
@@ -130,7 +134,7 @@ export const EditProductionItem = () => {
             <Button
               severity="warning"
               label="Cancel"
-              onClick={() => setIsDialogVisible(false)}
+              onClick={() => handleClose()}
             />
           </div>
         }
@@ -216,10 +220,10 @@ export const EditProductionItem = () => {
             suffix=" s"
             className="col-5 requ-input"
           />
-          <span className="ml-2">{formatTime(production!.productionTime)}</span>
+          <span className="ml-2">{formatTime(production ? production!.productionTime : 60)}</span>
         </div>
         <DataView
-          value={production!.requirements}
+          value={production?.requirements}
           header={
             <div className="flex justify-content-between align-items-center">
               <span>Requirements</span>
