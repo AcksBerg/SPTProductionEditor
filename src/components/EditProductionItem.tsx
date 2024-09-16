@@ -106,7 +106,6 @@ export const EditProductionItem = () => {
     if (currentItem) {
       setProduction(currentItem);
     } else {
-      console.log("New Production")
       setProduction({ ...defaultProduction, _id: generateNewId() });
     }
   }, [isNewProduction]);
