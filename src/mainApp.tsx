@@ -15,6 +15,7 @@ import { FileUpload, FileUploadHandlerEvent } from "primereact/fileupload";
 import initialProductionList from "./data/production.json";
 import { InputSwitch } from "primereact/inputswitch";
 
+
 export const MainApp = () => {
   const {
     productionList,
@@ -33,6 +34,8 @@ export const MainApp = () => {
   }
   const [searchItemName, setSearchItemName] = useState<string>("");
   const [theme, setTheme] = useState<string>("dark");
+
+
   useEffect(() => {
     if (availableAreas.length > 0) {
       setSelectedArea(availableAreas[0]);
@@ -43,7 +46,7 @@ export const MainApp = () => {
   useEffect(() => {
     const themeLink = document.getElementById('theme-link') as HTMLLinkElement;
     if (themeLink) {
-      themeLink.href = `/node_modules/primereact/resources/themes/viva-${theme}/theme.css`;
+      themeLink.href = theme !== "dark" ? "/themes/viva-light/theme.css" : "/themes/viva-dark/theme.css";
     }
   },[theme]);
 
