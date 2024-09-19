@@ -38,7 +38,7 @@ export const MainApp = () => {
       setSelectedArea(availableAreas[0]);
     }
     setIsProductionListMoveAvailable(searchItemName === "");
-  }, [searchItemName, availableAreas, setIsProductionListMoveAvailable]);
+  }, [searchItemName, setIsProductionListMoveAvailable]);
 
   useEffect(() => {
     const themeLink = document.getElementById('theme-link') as HTMLLinkElement;

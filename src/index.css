@@ -31,3 +31,12 @@
 .p-inputswitch-slider::before{
     border-radius: 2rem;
 }
+
+.p-dataview-header{
+    border-radius: 0.5rem 0.5rem 0 0 ;
+}
+
+.p-paginator-bottom{
+    border-radius: 0 0  0.5rem 0.5rem;
+
+}
