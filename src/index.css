@@ -1,7 +1,6 @@
 @import '../node_modules/primereact/resources/primereact.min.css';
 @import '../node_modules/primeflex/primeflex.min.css';
 @import '../node_modules/primeicons/primeicons.css';
-@import '../node_modules/primereact/resources/themes/viva-dark/theme.css';
 
 .p-dataview-content {
     padding: 10px;
@@ -23,4 +22,12 @@
 
 .requ-input {
     padding: 0;
+}
+
+.p-inputswitch-slider {
+    border-radius: 2rem;
+}
+
+.p-inputswitch-slider::before{
+    border-radius: 2rem;
 }

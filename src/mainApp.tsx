@@ -13,6 +13,7 @@ import { ConfirmDialog } from "primereact/confirmdialog";
 import { Card } from "primereact/card";
 import { FileUpload, FileUploadHandlerEvent } from "primereact/fileupload";
 import initialProductionList from "./data/production.json";
+import { InputSwitch } from "primereact/inputswitch";
 
 export const MainApp = () => {
   const {
@@ -31,13 +32,24 @@ export const MainApp = () => {
     throw new Error("availableAreas is not available in ProductionListContext");
   }
   const [searchItemName, setSearchItemName] = useState<string>("");
-
+  const [theme, setTheme] = useState<string>("dark");
   useEffect(() => {
     if (availableAreas.length > 0) {
       setSelectedArea(availableAreas[0]);
     }
     setIsProductionListMoveAvailable(searchItemName === "");
   }, [searchItemName, availableAreas, setIsProductionListMoveAvailable]);
+
+  useEffect(() => {
+    const themeLink = document.getElementById('theme-link') as HTMLLinkElement;
+    if (themeLink) {
+      themeLink.href = `/node_modules/primereact/resources/themes/viva-${theme}/theme.css`;
+    }
+  },[theme]);
+
+  const toggleTheme = () => {
+    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+  };
 
   const filterDataView = (craft: Production) => {
     if (!selectedArea) return false;
@@ -85,6 +97,11 @@ export const MainApp = () => {
           you reload the website, you will lose your progress. So, don't forget to
           download the production.json file.
         </p>
+        <div className="flex justify-content-center mt-2 align-items-center">
+          <span className="pi pi-moon"></span>
+          <InputSwitch className="mx-2" checked={theme !== "dark"} onClick={toggleTheme}/>
+          <span className="pi pi-sun"></span>
+        </div>
       </>
     );
   };
