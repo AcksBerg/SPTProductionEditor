@@ -184,6 +184,7 @@ export const MainApp = () => {
             customUpload
             auto
             chooseLabel="Upload a Production List"
+            className="flex"
           />
         </div>
       </Card>
