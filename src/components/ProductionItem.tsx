@@ -66,7 +66,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
           {defaultIds.includes(item._id) && (
             <Tag
               className="default-tag panelHeader-button "
-              data-pr-tooltip="Default Production, be careful when editing"
+              data-pr-tooltip="Default Production, be careful when editing, as it could lead to a game crash."
               data-pr-showdelay={800}
               data-pr-hidedelay={200}
               data-pr-position="right"
