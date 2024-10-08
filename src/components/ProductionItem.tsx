@@ -12,6 +12,8 @@ import { ConfirmDialog } from "primereact/confirmdialog";
 import { formatTime } from "../utils/formatTime";
 import { RequirementPanel } from "./RequirementPanel";
 import { generateNewId } from "./EditProductionItem";
+import { Tag } from "primereact/tag";
+import { Tooltip } from "primereact/tooltip";
 
 interface ProductionItemProps {
   item: Production;
@@ -21,12 +23,15 @@ interface ProductionItemProps {
 export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
   const { setIsDialogVisible } = useContext(DialogContext);
-  const { setCurrentItem, setIsNewProduction } = useContext(ProductionItemContext);
+  const { setCurrentItem, setIsNewProduction } = useContext(
+    ProductionItemContext
+  );
   const {
     removeProductionItem,
     moveProductionItem,
     isProductionListMoveAvailable,
-    existingIdsSet
+    existingIdsSet,
+    defaultIds,
   } = useContext(ProductionListContext)!;
 
   const handleEditClick = () => {
@@ -40,7 +45,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
   const handleCopyProduction = (item: Production) => {
     const newProduction = {
       ...item,
-      _id: generateNewId(existingIdsSet),  
+      _id: generateNewId(existingIdsSet),
     };
 
     setIsNewProduction(true);
@@ -58,6 +63,18 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
           <span className="font-light"> ID: {item._id}</span>
         </div>
         <div>
+          {defaultIds.includes(item._id) && (
+            <Tag
+              className="default-tag panelHeader-button "
+              data-pr-tooltip="Default Production, be careful when editing"
+              data-pr-showdelay={800}
+              data-pr-hidedelay={200}
+              data-pr-position="right"
+              data-pr-at="left-5 center"
+              data-pr-my="right center"
+              value="Default"
+            />
+          )}
           {isProductionListMoveAvailable && (
             <>
               <Button
@@ -108,6 +125,7 @@ export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
 
   return (
     <>
+      <Tooltip target=".default-tag" />
       <ConfirmDialog
         visible={deleteDialogVisible}
         onHide={() => setDeleteDialogVisible(false)}

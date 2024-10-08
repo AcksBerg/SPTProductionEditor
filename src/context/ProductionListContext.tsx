@@ -7,6 +7,7 @@ import React, {
 } from "react";
 import { Area, Production } from "../types";
 import areaList from "../data/area.json";
+import productionListTemp from "../data/production.json";
 
 interface ProductionListContextType {
   productionList: Production[] | undefined;
@@ -28,6 +29,7 @@ interface ProductionListContextType {
     React.SetStateAction<boolean>
   >;
   existingIdsSet: Set<string>;
+  defaultIds: string[];
 }
 
 export const ProductionListContext = createContext<
@@ -37,6 +39,7 @@ export const ProductionListContext = createContext<
 export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
+  const defaultIds = Array.from(productionListTemp).map((e) => e._id);
   const [productionList, setProductionList] = useState<
     Production[] | undefined
   >(undefined);
@@ -159,10 +162,16 @@ export const ProductionListProvider: React.FC<{ children: ReactNode }> = ({
       moveProductionItem,
       isProductionListMoveAvailable,
       setIsProductionListMoveAvailable,
-      existingIdsSet
+      existingIdsSet,
+      defaultIds,
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [productionList, availableAreas, isProductionListMoveAvailable,existingIdsSet]);
+  }, [
+    productionList,
+    availableAreas,
+    isProductionListMoveAvailable,
+    existingIdsSet,
+  ]);
 
   return (
     <ProductionListContext.Provider value={contextValue}>
