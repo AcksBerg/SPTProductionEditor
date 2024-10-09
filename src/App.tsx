@@ -14,14 +14,14 @@ import { Card } from "primereact/card";
 import { FileUpload, FileUploadHandlerEvent } from "primereact/fileupload";
 import initialProductionList from "./data/production.json";
 import { InputSwitch } from "primereact/inputswitch";
-
+import { AreaContext } from "./context/AreaContext";
 
 export const App = () => {
+  const { availableAreas } = useContext(AreaContext);
   const {
     productionList,
     setProductionList,
     setIsProductionListMoveAvailable,
-    availableAreas,
   } = useContext(ProductionListContext)!;
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
   const [selectedArea, setSelectedArea] = useState<Area>({
@@ -35,7 +35,6 @@ export const App = () => {
   const [searchItemName, setSearchItemName] = useState<string>("");
   const [theme, setTheme] = useState<string>("dark");
 
-
   useEffect(() => {
     if (availableAreas.length > 0) {
       setSelectedArea(availableAreas[0]);
@@ -44,14 +43,17 @@ export const App = () => {
   }, [searchItemName, setIsProductionListMoveAvailable]);
 
   useEffect(() => {
-    const themeLink = document.getElementById('theme-link') as HTMLLinkElement;
+    const themeLink = document.getElementById("theme-link") as HTMLLinkElement;
     if (themeLink) {
-      themeLink.href = theme !== "dark" ? "/themes/viva-light/theme.css" : "/themes/viva-dark/theme.css";
+      themeLink.href =
+        theme !== "dark"
+          ? "/themes/viva-light/theme.css"
+          : "/themes/viva-dark/theme.css";
     }
-  },[theme]);
+  }, [theme]);
 
   const toggleTheme = () => {
-    setTheme((prevTheme) => (prevTheme === 'dark' ? 'light' : 'dark'));
+    setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
   };
 
   const filterDataView = (craft: Production) => {
@@ -96,19 +98,23 @@ export const App = () => {
         </p>
         <p>
           This website does not use cookies. Everything runs locally on your
-          machine, and no data is transmitted to the server. This means that when
-          you reload the website, you will lose your progress. So, don't forget to
-          download the production.json file.
+          machine, and no data is transmitted to the server. This means that
+          when you reload the website, you will lose your progress. So, don't
+          forget to download the production.json file.
         </p>
         <div className="flex justify-content-center mt-2 align-items-center">
           <span className="pi pi-moon"></span>
-          <InputSwitch className="mx-2" checked={theme !== "dark"} onClick={toggleTheme}/>
+          <InputSwitch
+            className="mx-2"
+            checked={theme !== "dark"}
+            onClick={toggleTheme}
+          />
           <span className="pi pi-sun"></span>
         </div>
       </>
     );
   };
-  
+
   return productionList !== undefined ? (
     <>
       <ConfirmDialog
@@ -148,7 +154,6 @@ export const App = () => {
             setSelectedArea={setSelectedArea}
             searchItemName={searchItemName}
             setSearchItemName={setSearchItemName}
-            availableAreas={availableAreas}
           />
         }
         paginator

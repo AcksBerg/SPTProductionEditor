@@ -5,13 +5,13 @@ import { Button } from "primereact/button";
 import { DialogContext } from "../context/DialogContext";
 import { useContext } from "react";
 import { ProductionItemContext } from "../context/ProductionItemContext";
+import { AreaContext } from "../context/AreaContext";
 
 interface DataViewHeaderProps {
   selectedArea: Area;
   setSelectedArea: (area: Area) => void;
   searchItemName: string;
   setSearchItemName: (name: string) => void;
-  availableAreas: Area[];
 }
 
 export const DataViewHeader = ({
@@ -19,12 +19,13 @@ export const DataViewHeader = ({
   setSelectedArea,
   searchItemName,
   setSearchItemName,
-  availableAreas,
 }: DataViewHeaderProps) => {
+  const { availableAreas } = useContext(AreaContext);
   const { setIsDialogVisible } = useContext(DialogContext);
   const { setCurrentItem, setIsNewProduction } = useContext(
     ProductionItemContext
   );
+
   return (
     <div className="flex justify-content-between">
       <div>

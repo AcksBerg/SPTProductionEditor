@@ -1,30 +1,48 @@
-import React, { createContext, useState, useMemo } from "react";
+import React, { createContext, useState, useMemo, ReactNode } from "react";
+import { Area, Production } from "../types";
+import areaList from "../data/area.json";
 
 interface AreaContextType {
-  isDialogVisible: boolean;
-  setIsDialogVisible: React.Dispatch<React.SetStateAction<boolean>>;
+  availableAreas: Area[];
+  setAvailableAreas: React.Dispatch<React.SetStateAction<Area[]>>;
+  updateAvailableAreas: (newProductionList: Production[]) => void;
 }
 
 export const AreaContext = createContext<AreaContextType>({
-  isDialogVisible: false,
-  setIsDialogVisible: () => undefined,
+  availableAreas: [{ name: "All", areaId: -1, maxLevel: 0 }],
+  setAvailableAreas: () => {},
+  updateAvailableAreas: () => {},
 });
 
-export const AreaProvider: React.FC<{ children: React.ReactNode }> = ({
+export const AreaProvider: React.FC<{ children: ReactNode }> = ({
   children,
 }) => {
-  const [isDialogVisible, setIsDialogVisible] = useState<boolean>(false);
+  const [availableAreas, setAvailableAreas] = useState<Area[]>([
+    { name: "All", areaId: -1, maxLevel: 0 },
+  ]);
 
-  const initialContext = useMemo(() => {
-    return {
-      isDialogVisible,
-      setIsDialogVisible
-    };
-  }, [isDialogVisible]);
+  const updateAvailableAreas = (newProductionList: Production[]) => {
+    const usedAreaTypes = Array.from(
+      new Set(newProductionList.map((prod) => prod.areaType))
+    );
+    const updatedAreas = [
+      { name: "All", areaId: -1, maxLevel: 0 },
+      ...areaList.filter((area) => usedAreaTypes.includes(area.areaId)),
+    ];
+
+    setAvailableAreas(updatedAreas);
+  };
+
+  const contextValue = useMemo(
+    () => ({
+      availableAreas,
+      setAvailableAreas,
+      updateAvailableAreas,
+    }),
+    [availableAreas]
+  );
 
   return (
-    <AreaContext.Provider value={initialContext}>
-      {children}
-    </AreaContext.Provider>
+    <AreaContext.Provider value={contextValue}>{children}</AreaContext.Provider>
   );
 };
