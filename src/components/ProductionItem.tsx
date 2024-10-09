@@ -3,7 +3,7 @@ import { Button } from "primereact/button";
 import { PrimeIcons } from "primereact/api";
 import { DataView } from "primereact/dataview";
 import itemList from "../data/item.json";
-import { Area, Production, Requirement } from "../types";
+import { Production, Requirement } from "../types";
 import { useContext, useState } from "react";
 import { DialogContext } from "../context/DialogContext";
 import { ProductionItemContext } from "../context/ProductionItemContext";
@@ -14,14 +14,15 @@ import { RequirementPanel } from "./RequirementPanel";
 import { generateNewId } from "./EditProductionItem";
 import { Tag } from "primereact/tag";
 import { Tooltip } from "primereact/tooltip";
+import { AreaContext } from "../context/AreaContext";
 
 interface ProductionItemProps {
   item: Production;
-  selectedArea: Area;
 }
 
-export const ProductionItem = ({ item, selectedArea }: ProductionItemProps) => {
+export const ProductionItem = ({ item }: ProductionItemProps) => {
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
+  const {selectedArea} = useContext(AreaContext);
   const { setIsDialogVisible } = useContext(DialogContext);
   const { setCurrentItem, setIsNewProduction } = useContext(
     ProductionItemContext

@@ -5,7 +5,7 @@ import { DataView } from "primereact/dataview";
 import { saveAs } from "file-saver";
 import { ProductionItem } from "./components/ProductionItem";
 import { DataViewHeader } from "./components/DataViewHeader";
-import { Area, Production } from "./types";
+import { Production } from "./types";
 import { ProductionListContext } from "./context/ProductionListContext";
 import { EditProductionItem } from "./components/EditProductionItem";
 import { PrimeIcons } from "primereact/api";
@@ -17,18 +17,14 @@ import { InputSwitch } from "primereact/inputswitch";
 import { AreaContext } from "./context/AreaContext";
 
 export const App = () => {
-  const { availableAreas } = useContext(AreaContext);
+  const { availableAreas,selectedArea, setSelectedArea } = useContext(AreaContext);
   const {
     productionList,
     setProductionList,
     setIsProductionListMoveAvailable,
   } = useContext(ProductionListContext)!;
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
-  const [selectedArea, setSelectedArea] = useState<Area>({
-    name: "All",
-    areaId: -1,
-    maxLevel: 0,
-  });
+
   if (!availableAreas) {
     throw new Error("availableAreas is not available in ProductionListContext");
   }
@@ -146,12 +142,10 @@ export const App = () => {
           filterDataView(craft)
         )}
         itemTemplate={(item) => (
-          <ProductionItem item={item} selectedArea={selectedArea} />
+          <ProductionItem item={item} />
         )}
         header={
           <DataViewHeader
-            selectedArea={selectedArea}
-            setSelectedArea={setSelectedArea}
             searchItemName={searchItemName}
             setSearchItemName={setSearchItemName}
           />

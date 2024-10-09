@@ -1,6 +1,5 @@
 import { Dropdown } from "primereact/dropdown";
 import { InputText } from "primereact/inputtext";
-import { Area } from "../types";
 import { Button } from "primereact/button";
 import { DialogContext } from "../context/DialogContext";
 import { useContext } from "react";
@@ -8,19 +7,16 @@ import { ProductionItemContext } from "../context/ProductionItemContext";
 import { AreaContext } from "../context/AreaContext";
 
 interface DataViewHeaderProps {
-  selectedArea: Area;
-  setSelectedArea: (area: Area) => void;
   searchItemName: string;
   setSearchItemName: (name: string) => void;
 }
 
 export const DataViewHeader = ({
-  selectedArea,
-  setSelectedArea,
   searchItemName,
   setSearchItemName,
 }: DataViewHeaderProps) => {
-  const { availableAreas } = useContext(AreaContext);
+  const { availableAreas, selectedArea, setSelectedArea } =
+    useContext(AreaContext);
   const { setIsDialogVisible } = useContext(DialogContext);
   const { setCurrentItem, setIsNewProduction } = useContext(
     ProductionItemContext
