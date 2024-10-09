@@ -32,7 +32,7 @@ export const App = () => {
   const [theme, setTheme] = useState<string>("dark");
 
   useEffect(() => {
-    if (availableAreas.length > 0) {
+    if (searchItemName.length > 0) {
       setSelectedArea(availableAreas[0]);
     }
     setIsProductionListMoveAvailable(searchItemName === "");

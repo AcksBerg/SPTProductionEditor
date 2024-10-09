@@ -28,7 +28,10 @@ export const DataViewHeader = ({
         <span>Production area</span>
         <Dropdown
           value={selectedArea}
-          onChange={(e) => setSelectedArea(e.value)}
+          onChange={(e) => {
+            setSearchItemName("");
+            setSelectedArea(e.value);
+          }}
           options={availableAreas}
           optionLabel="name"
           placeholder="Select an Area"
