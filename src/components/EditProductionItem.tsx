@@ -55,7 +55,7 @@ const defaultRequirement: Requirement = {
 
 export const EditProductionItem = () => {
   const { isDialogVisible, setIsDialogVisible } = useContext(DialogContext);
-  const {selectedArea} = useContext(AreaContext);
+  const { selectedArea } = useContext(AreaContext);
   const productionListContext = useContext(ProductionListContext);
 
   if (!productionListContext) {
@@ -71,10 +71,11 @@ export const EditProductionItem = () => {
     useContext(ProductionItemContext);
   const [tempId, setTempId] = useState<string>("");
   const createDefaultProduction = (): Production => {
+    const choosenArea = selectedArea.areaId == -1 ? 0 : selectedArea.areaId;
     return {
       _id: generateNewId(existingIdsSet),
-      areaType: selectedArea.areaId == -1 ? 0 : selectedArea.areaId,
-      requirements: [],
+      areaType: choosenArea,
+      requirements: [{ type: "Area", areaType: choosenArea, requiredLevel: 1 }],
       productionTime: 60,
       needFuelForAllProductionTime: false,
       locked: false,
