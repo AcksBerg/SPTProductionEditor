@@ -22,7 +22,7 @@ interface ProductionItemProps {
 
 export const ProductionItem = ({ item }: ProductionItemProps) => {
   const [deleteDialogVisible, setDeleteDialogVisible] = useState(false);
-  const {selectedArea} = useContext(AreaContext);
+  const { selectedArea } = useContext(AreaContext);
   const { setIsDialogVisible } = useContext(DialogContext);
   const { setCurrentItem, setIsNewProduction } = useContext(
     ProductionItemContext
@@ -57,8 +57,18 @@ export const ProductionItem = ({ item }: ProductionItemProps) => {
   const panelHeader = () => {
     return (
       <div className="flex w-full justify-content-between align-items-center">
+        <Tooltip target={".img-tag-" + item.endProduct}>
+          <img
+            src={
+              "https://assets.tarkov.dev/" +
+              item.endProduct +
+              "-base-image.webp"
+            }
+            alt={itemList[item.endProduct as keyof typeof itemList].name}
+          />
+        </Tooltip>
         <div className="flex">
-          <span className="font-bold pr-1">
+          <span className={"font-bold pr-1 img-tag-" + item.endProduct}>
             {itemList[item.endProduct as keyof typeof itemList].name}
           </span>
           <span className="font-light"> ID: {item._id}</span>
