@@ -15,6 +15,7 @@ import { EditRequirementPanel } from "./EditRequirementPanel";
 import { ProductionListContext } from "../context/ProductionListContext";
 import { InputNumber } from "primereact/inputnumber";
 import { Toast } from "primereact/toast";
+import { AreaContext } from "../context/AreaContext";
 
 export const generateNewId = (
   existingIds: Set<string>,
@@ -54,6 +55,7 @@ const defaultRequirement: Requirement = {
 
 export const EditProductionItem = () => {
   const { isDialogVisible, setIsDialogVisible } = useContext(DialogContext);
+  const {selectedArea} = useContext(AreaContext);
   const productionListContext = useContext(ProductionListContext);
 
   if (!productionListContext) {
@@ -71,7 +73,7 @@ export const EditProductionItem = () => {
   const createDefaultProduction = (): Production => {
     return {
       _id: generateNewId(existingIdsSet),
-      areaType: 0,
+      areaType: selectedArea.areaId == -1 ? 0 : selectedArea.areaId,
       requirements: [],
       productionTime: 60,
       needFuelForAllProductionTime: false,
