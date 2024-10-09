@@ -67,8 +67,8 @@ export const ProductionItem = ({ item }: ProductionItemProps) => {
             alt={itemList[item.endProduct as keyof typeof itemList].name}
           />
         </Tooltip>
-        <div className="flex">
-          <span className={"font-bold pr-1 img-tag-" + item.endProduct}>
+        <div className={"flex img-tag-" + item.endProduct}>
+          <span className="font-bold pr-1">
             {itemList[item.endProduct as keyof typeof itemList].name}
           </span>
           <span className="font-light"> ID: {item._id}</span>
