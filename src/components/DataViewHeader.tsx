@@ -22,7 +22,9 @@ export const DataViewHeader = ({
   availableAreas,
 }: DataViewHeaderProps) => {
   const { setIsDialogVisible } = useContext(DialogContext);
-  const { setCurrentItem,setIsNewProduction } = useContext(ProductionItemContext);
+  const { setCurrentItem, setIsNewProduction } = useContext(
+    ProductionItemContext
+  );
   return (
     <div className="flex justify-content-between">
       <div>
